@@ -1063,7 +1063,7 @@ pre .javascript .function {
   right: 30px;
   z-index: 1050;
   padding: 0 6px;
-  width: 24px;
+  width: initial;
   background: #222;
   font-size: 12px;
   opacity: 0.6;
@@ -1618,6 +1618,22 @@ pre .javascript .function {
 .post:last-child .post-eof.post-eof.post-eof {
   display: none;
 }
+code {
+  color: #ff7600;
+  background: #fbf7f8;
+  margin: 2px;
+}
+.highlight,
+pre {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 3px;
+}
+.highlight,
+code,
+pre {
+  border: 1px solid #d6d6d6;
+}
 .post-gallery {
   display: table;
   table-layout: fixed;
@@ -1935,7 +1951,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9ec4;
+  background: #b8ff66;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3123,4 +3139,39 @@ img:hover {
   .post-body {
     text-align: justify;
   }
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  background: rgba(255,255,255,0.9) none repeat scroll !important;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.post-block,
+.header-inner,
+.sidebar-inner,
+.use-motion .post-block,
+.use-motion .pagination,
+.use-motion .comments {
+  background: rgba(255,255,255,0.7);
+}
+.sidebar,
+tbody tr:nth-of-type(odd),
+pre {
+  background: transparent;
+}
+.menu-item-active a,
+.menu .menu-item a:hover,
+.menu .menu-item span.exturl:hover,
+.btn,
+.highlight,
+.hbe-input-container input {
+  background: rgba(0,0,0,0.1);
+}
+.highlight .gutter pre {
+  color: #222;
+}
+.highlight .gutter {
+  background: rgba(0,0,0,0.2);
 }
