@@ -1951,7 +1951,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff3b62;
+  background: #ffc383;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2513,14 +2513,6 @@ img:hover {
 #gitment-display-button:hover {
   color: #fff;
   background: #0a9caf;
-}
-.gt-header a,
-.gt-comments a,
-.gt-popup a {
-  border-bottom: none;
-}
-.gt-container .gt-popup .gt-action.is--active:before {
-  top: 0.7em;
 }
 .page-archive .archive-page-counter {
   position: relative;
