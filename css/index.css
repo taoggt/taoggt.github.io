@@ -3013,9 +3013,8 @@ figure.gallery-group .gallery-group-name:after {
   position: relative;
   margin: 0 0 1rem;
   padding: 15px;
-  border: initial;
-  border-left: 5px solid #eee;
-  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-left-width: 5px;
   border-radius: 3px;
 }
 .note h2,
@@ -3057,7 +3056,6 @@ figure.gallery-group .gallery-group-name:after {
   font-family: 'FontAwesome';
 }
 .note.default {
-  background-color: #f7f7f7;
   border-left-color: #777;
 }
 .note.default h2,
@@ -3072,7 +3070,6 @@ figure.gallery-group .gallery-group-name:after {
   color: #777;
 }
 .note.primary {
-  background-color: #f5f0fa;
   border-left-color: #6f42c1;
 }
 .note.primary h2,
@@ -3087,7 +3084,6 @@ figure.gallery-group .gallery-group-name:after {
   color: #6f42c1;
 }
 .note.info {
-  background-color: #eef7fa;
   border-left-color: #428bca;
 }
 .note.info h2,
@@ -3102,7 +3098,6 @@ figure.gallery-group .gallery-group-name:after {
   color: #428bca;
 }
 .note.success {
-  background-color: #eff8f0;
   border-left-color: #5cb85c;
 }
 .note.success h2,
@@ -3117,7 +3112,6 @@ figure.gallery-group .gallery-group-name:after {
   color: #5cb85c;
 }
 .note.warning {
-  background-color: #fdf8ea;
   border-left-color: #f0ad4e;
 }
 .note.warning h2,
@@ -3132,7 +3126,6 @@ figure.gallery-group .gallery-group-name:after {
   color: #f0ad4e;
 }
 .note.danger {
-  background-color: #fcf1f2;
   border-left-color: #d9534f;
 }
 .note.danger h2,
@@ -4862,10 +4855,6 @@ img {
 }
 [data-theme='dark'] #mobile-sidebar #mobile-sidebar-menus a {
   color: rgba(255,255,255,0.6) !important;
-}
-[data-theme='dark'] .note {
-  filter: brightness(0.7);
-  color: #4c4948;
 }
 [data-theme='dark'] #hexo-blog-encrypt label,
 [data-theme='dark'] #hexo-blog-encrypt input {
