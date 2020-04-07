@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>TAOG&#39;s Blog</title>
+  <icon>https://www.taogblog.tk/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.taogblog.tk/"/>
+  <updated>2020-04-06T13:00:29.970Z</updated>
+  <id>https://www.taogblog.tk/</id>
+  
+  <author>
+    <name>TAOG</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>模拟城市4与5分享</title>
+    <link href="https://www.taogblog.tk/2020/04/06/%E6%A8%A1%E6%8B%9F%E5%9F%8E%E5%B8%824%E4%B8%8E5%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.taogblog.tk/2020/04/06/%E6%A8%A1%E6%8B%9F%E5%9F%8E%E5%B8%824%E4%B8%8E5%E5%88%86%E4%BA%AB/</id>
+    <published>2020-04-06T12:51:37.000Z</published>
+    <updated>2020-04-06T13:00:29.970Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;模拟城市4-全DLCs&quot;&gt;&lt;a href=&quot;#模拟城市4-全DLCs&quot; class=&quot;headerlink&quot; title=&quot;模拟城市4 全DLCs&quot;&gt;&lt;/a&gt;模拟城市4 全DLCs&lt;/h1&gt;&lt;p&gt;链接：&lt;a href=&quot;https://pan.baidu.com/s/1XzS9j_vg-nFLF6gK0tKE7g&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1XzS9j_vg-nFLF6gK0tKE7g&lt;/a&gt; &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="下载" scheme="https://www.taogblog.tk/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+      <category term="游戏" scheme="https://www.taogblog.tk/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSGO如何更改国际服</title>
+    <link href="https://www.taogblog.tk/2020/04/05/CSGO%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9%E5%9B%BD%E9%99%85%E6%9C%8D/"/>
+    <id>https://www.taogblog.tk/2020/04/05/CSGO%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9%E5%9B%BD%E9%99%85%E6%9C%8D/</id>
+    <published>2020-04-05T08:06:05.000Z</published>
+    <updated>2020-04-07T05:14:33.391Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自CSGO免费了以后，国服也上线了，目前在Steam下载的CSGO默认是国服，国服需要各种认证，实名认证还要扫脸&lt;br&gt;点击以查看全部内容&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="https://www.taogblog.tk/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="游戏" scheme="https://www.taogblog.tk/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+      <category term="教程" scheme="https://www.taogblog.tk/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TAOG&#39;S Blog的服务器升级！</title>
+    <link href="https://www.taogblog.tk/2020/04/04/server-up/"/>
+    <id>https://www.taogblog.tk/2020/04/04/server-up/</id>
+    <published>2020-04-04T07:42:03.000Z</published>
+    <updated>2020-04-06T00:52:34.089Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;TAOG’S-Blog的服务器升级！&quot;&gt;&lt;a href=&quot;#TAOG’S-Blog的服务器升级！&quot; class=&quot;headerlink&quot; title=&quot;TAOG’S Blog的服务器升级！&quot;&gt;&lt;/a&gt;TAOG’S Blog的服务器升级！&lt;/h1&gt;&lt;p&gt;今天我将此博客的托管仓库由GitHub换到了Coding，速度肯定是一大提升！&lt;br&gt;域名还是原来的taogblog.tk保持不变&lt;br&gt;注：仅改变了境内访问，如果你处于境外那么还是访问到GitHub&lt;/p&gt;
+&lt;p&gt;4.4 为因新冠病毒而逝去的英雄们致敬!!!&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>为因新冠病毒而逝去的英雄们致敬</title>
+    <link href="https://www.taogblog.tk/2020/04/04/%E5%93%80%E6%82%BC/"/>
+    <id>https://www.taogblog.tk/2020/04/04/%E5%93%80%E6%82%BC/</id>
+    <published>2020-04-03T16:00:00.000Z</published>
+    <updated>2020-04-06T00:53:56.297Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;愿逝者安息，愿祖国昌盛，永远铭记奉献生命在一线的白衣天使愿逝者安息，愿祖国昌盛，永远铭记奉献生命在一线的白衣天使!(摘抄于网络)      —–TAOG’S BLOG&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/&quot; class=&quot;lazyload&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="节日" scheme="https://www.taogblog.tk/categories/%E8%8A%82%E6%97%A5/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>消逝的光芒</title>
+    <link href="https://www.taogblog.tk/2020/03/23/DLight/"/>
+    <id>https://www.taogblog.tk/2020/03/23/DLight/</id>
+    <published>2020-03-23T11:21:35.000Z</published>
+    <updated>2020-04-06T13:00:57.373Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;消逝的光芒Dying-Light下载&quot;&gt;&lt;a href=&quot;#消逝的光芒Dying-Light下载&quot; class=&quot;headerlink&quot; title=&quot;消逝的光芒Dying Light下载&quot;&gt;&lt;/a&gt;消逝的光芒Dying Light下载&lt;/h2&gt;&lt;p&gt;链接:&lt;br&gt;&lt;a href=&quot;https://pan.baidu.com/s/1KUufACep_lCJKNsCMdqtOQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1KUufACep_lCJKNsCMdqtOQ&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="下载" scheme="https://www.taogblog.tk/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+      <category term="游戏" scheme="https://www.taogblog.tk/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>看门狗1-2下载</title>
+    <link href="https://www.taogblog.tk/2020/03/22/watchdog/"/>
+    <id>https://www.taogblog.tk/2020/03/22/watchdog/</id>
+    <published>2020-03-22T08:23:05.000Z</published>
+    <updated>2020-04-06T13:00:40.243Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;看门狗 一代&lt;br&gt;链接：&lt;a href=&quot;https://pan.baidu.com/s/1yMxXz3JtQ1Tk79EM8VRGFQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1yMxXz3JtQ1Tk79EM8VRGFQ&lt;/a&gt; &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="下载" scheme="https://www.taogblog.tk/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+      <category term="游戏" scheme="https://www.taogblog.tk/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>319-326 eipc</title>
+    <link href="https://www.taogblog.tk/2020/03/19/epic-xi1/"/>
+    <id>https://www.taogblog.tk/2020/03/19/epic-xi1/</id>
+    <published>2020-03-19T12:30:31.000Z</published>
+    <updated>2020-04-06T10:54:54.962Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;3.19-3.26 Eipc喜加一&lt;br&gt;《The Stanley Parable》&lt;br&gt;《Watch Dogs》&lt;br&gt;进入以查看全部内容&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Epic喜加一" scheme="https://www.taogblog.tk/categories/Epic%E5%96%9C%E5%8A%A0%E4%B8%80/"/>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="下载" scheme="https://www.taogblog.tk/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+      <category term="Epic喜加一" scheme="https://www.taogblog.tk/tags/Epic%E5%96%9C%E5%8A%A0%E4%B8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Adobe Dw cc2017分享</title>
+    <link href="https://www.taogblog.tk/2020/03/14/dw-cc2017%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.taogblog.tk/2020/03/14/dw-cc2017%E5%88%86%E4%BA%AB/</id>
+    <published>2020-03-14T07:07:13.000Z</published>
+    <updated>2020-04-06T00:48:01.782Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;打开以查看所有内容&quot;&gt;&lt;a href=&quot;#打开以查看所有内容&quot; class=&quot;headerlink&quot; title=&quot;打开以查看所有内容&quot;&gt;&lt;/a&gt;打开以查看所有内容&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="下载" scheme="https://www.taogblog.tk/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Office2016分享</title>
+    <link href="https://www.taogblog.tk/2020/03/14/office2016%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.taogblog.tk/2020/03/14/office2016%E5%88%86%E4%BA%AB/</id>
+    <published>2020-03-14T07:06:56.000Z</published>
+    <updated>2020-04-06T13:01:07.053Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;打开以查看内容&quot;&gt;&lt;a href=&quot;#打开以查看内容&quot; class=&quot;headerlink&quot; title=&quot;打开以查看内容&quot;&gt;&lt;/a&gt;打开以查看内容&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="分享" scheme="https://www.taogblog.tk/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+</feed>
