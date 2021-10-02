@@ -4,8 +4,8 @@
   <meta name="generator" content="Hexo 5.3.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://iktao.cn/">
+  
+  <link rel="canonical" href="https://iktao.cn/archives/2020/25.html">
   <!-- 渲染优化 -->
   <meta http-equiv="x-dns-prefetch-control" content="on">
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
@@ -20,23 +20,26 @@
   <meta content="TAOG" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1633185929508" as="style">
+  <link rel="preload" href="/css/style.css?time=1633185929375" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>TAOG</title>
-  <meta name="keywords" content="blog,TAOG,TAOG's Blog,TAOGblog,TAOG小站">
-  <meta name="description" content="一个小破博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="TAOG">
-<meta property="og:url" content="https://iktao.cn/index.html">
+  <title>Cloudflare如何使用与自定义节点的添加 - TAOG</title>
+  <meta name="keywords" content="教程,打造个性化网站系列,blog,TAOG,TAOG's Blog,TAOGblog,TAOG小站">
+  <meta name="description" content="Cloudflare相信各位站长已经不陌生了  注：Cloudflare以下简称CF 啥？你还不知道？？ [scode type&#x3D;”share”]Cloudflare是一家美国的跨国科技企业，总部位于旧金山，在英国伦敦亦设有办事处。Cloudflare以向客户提供网站安全管理、性能优化及相关的技术支持为主要业务。通过基于反向代理的内容分发网络(CDN, Content Delivery Netwo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cloudflare如何使用与自定义节点的添加">
+<meta property="og:url" content="https://iktao.cn/archives/2020/25.html">
 <meta property="og:site_name" content="TAOG">
-<meta property="og:description" content="一个小破博客">
+<meta property="og:description" content="Cloudflare相信各位站长已经不陌生了  注：Cloudflare以下简称CF 啥？你还不知道？？ [scode type&#x3D;”share”]Cloudflare是一家美国的跨国科技企业，总部位于旧金山，在英国伦敦亦设有办事处。Cloudflare以向客户提供网站安全管理、性能优化及相关的技术支持为主要业务。通过基于反向代理的内容分发网络(CDN, Content Delivery Netwo">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2020-07-15T03:09:00.000Z">
+<meta property="article:modified_time" content="2021-02-16T07:41:24.230Z">
 <meta property="article:author" content="TAOG">
-<meta property="article:tag" content="blog,TAOG,TAOG&#39;s Blog,TAOGblog,TAOG小站">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="打造个性化网站系列">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1791,8 +1794,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1633185929508" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1633185929508"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1633185929375" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1633185929375"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2219,7 +2222,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- Custom Files head end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style="opacity: 0">
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style="opacity: 0">
   <div class="container">
   <div id="wrapper">
     <div class="nav-sub">
@@ -2553,7 +2556,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class="cover-wrapper  focus" style="display: ;">
+      <div id="none" class="cover-wrapper post focus" style="display: none;">
         
   <div class="cover-bg lazyload placeholder" data-bg="https://unpkg.zhimg.com/iktao@1.2.1/img/cover/cover925.jpg"></div>
 
@@ -2594,7 +2597,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-        <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
     
   
@@ -2604,710 +2607,611 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/25.html">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="TAOG">
   </span>
   
-  
-  
-    <div class="headimg-div">
-      <a class="headimg-a" href="/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html">
-        <img itemprop="image" class="headimg lazyload" alt="MySQL-基础语句" src="https://unpkg.zhimg.com/iktao@1.2.0/img/cover/mysqlcover.jpg" class="lazyload" data-srcset="https://unpkg.zhimg.com/iktao@1.2.0/img/cover/mysqlcover.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html" itemprop="url">
-        MySQL-基础语句
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>此文为我学习MySQL基本语句时所记录的笔记</p>
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-19T20:00:00+08:00">2021-08-19</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/46.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
   
     <span hidden>
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/46.html" itemprop="url">
-        C#学习笔记--属性
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
     
-      <blockquote>
-<p>属性（Property）的访问器（accessor）包含有助于获取（读取或计算）或设置（写入）属性的可执行语句。访问器（accessor）声明可包含一个 get 访问器、一个 set 访问器，或者同时包含二者。 </p>
-<p>—菜鸟教程</p>
-</blockquote>
+    
+      <h1 class="title" itemprop="name headline">
+        Cloudflare如何使用与自定义节点的添加
+      </h1>
+      <div class="new-meta-box">
+        
+          
+            
+<div class="new-meta-item author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class="author" href="/" rel="nofollow">
+    <img itemprop="image" src="https://doge.cdn.iktao.cn/img/Logoii-ist.webp" class="lazyload" data-srcset="https://doge.cdn.iktao.cn/img/Logoii-ist.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+    <p itemprop="name">TAOG</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item category">
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
+      </span>
     
   </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-07-11T20:33:00+08:00">2021-07-11</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2021/46.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2020-07-15T11:09:00+08:00">
+  <a class="notlink" href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年7月15日</p>
+  </a>
 </div>
 
-          </div>
+          
         
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class="notlink" href="/" onclick="return false;" title="Click me!" >
       
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/45.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/45.html" itemprop="url">
-        在主题里投放AdSense到发家致富
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <h2 id="Adsense是什么？"><a href="#Adsense是什么？" class="headerlink" title="Adsense是什么？"></a>Adsense是什么？</h2><p>AdSense是个合成词。其中ad是“广告”之意，sense是“感知”之意，综合起来的意思就是相关广告。Google通过程序来分析网站的内容，并且投放与网站内容相关的广告。Google AdSense是由<a target="_blank" rel="external nofollow noopener noreferrer" href="https://baike.baidu.com/item/Google/86964">Google</a>公司推出的针对网站主（简称发布商）的一个互联网广告服务。</p>
-<p>—百度百科
-    
-  </p></div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-01-25T11:17:00+08:00">2021-01-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
-            </span>
-          
-        
+      <div id="lc-pv" data-title="Cloudflare如何使用与自定义节点的添加" data-path="/archives/2020/25.html">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
       </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2021/45.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
+    </a>
+  </div>
 
-</div>
 
-          </div>
+          
         
-      
+        <!-- Custom Files topMeta begin-->
         
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/44.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/44.html" itemprop="url">
-        更改Handsome主题默认图标
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->
-
-<h2 id="注意"><a href="#注意" class="headerlink" title="!!注意"></a>!!注意</h2><p>因taog.top域名到期，所以本文图片无法访问，我也没做备份，就先看文字吧</p>
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-01-18T14:23:00+08:00">2021-01-18</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2021/44.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/43.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/43.html" itemprop="url">
-        2020年度总结
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <!--markdown-->Cloudflare相信各位站长已经不陌生了
 
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>岁月如梭，不知不觉中，2020年已成为了过去</p>
-<p>在这一年中，新冠、地震、洪涝这些灾难一一出现</p>
-<p>回首望去，貌似停课的事还在昨天</p>
-<p>我的博客，也建立在那段时间(2020.02.08)</p>
-<p>转过头来，总结了一下在今年，本站的经历吧！</p>
-    
+<p>注：Cloudflare以下简称CF</p>
+<p>啥？你还不知道？？</p>
+<p>[scode type=”share”]Cloudflare是一家美国的跨国科技企业，总部位于旧金山，在英国伦敦亦设有办事处。Cloudflare以向客户提供网站安全管理、性能优化及相关的技术支持为主要业务。通过基于反向代理的内容分发网络(CDN, Content Delivery Network)、任播(Anycast)技术 [1]  、基于nginx+lua架构的Web应用防火墙(WAF, Web Application Firewall) [2]  及分布式域名解析服务(Distributed Domain Name Server)等技术，Cloudflare可以帮助受保护站点抵御包括分布式拒绝服务攻击(DDoS, Distributed Denial of Service)在内的大多数网络攻击，确保该网站长期在线，同时提升网站的性能、访问速度以改善访客体验。</p>
+<p>—百度百科[/scode]</p>
+<p>总的来说，CF就是提供 免费 CDN的一家公司</p>
+<p>套了CDN有啥好处呢？</p>
+<p>保护源站IP，防止源站IP泄漏</p>
+<p>提高网站的访问速度</p>
+<p>……</p>
+<h1 id="注册Cloudflare"><a href="#注册Cloudflare" class="headerlink" title="注册Cloudflare"></a>注册Cloudflare</h1><p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.cloudflare.com/zh-cn/">点我</a></p>
+<p>咋注册我也不多说了，跟着他的操作一步一步来</p>
+<p>之后他会叫你绑定站点，不用管，放在一边即可</p>
+<h1 id="接入Cloudflare"><a href="#接入Cloudflare" class="headerlink" title="接入Cloudflare"></a>接入Cloudflare</h1><p>这里使用<a target="_blank" rel="external nofollow noopener noreferrer" href="http://cdn.bnxb.com/">奔牛网</a>来接入(因为此接入支持CNAME/IP接入)</p>
+<p>首先去右上角注册一个奔牛账号，再依次点击域名接入-添加域名，如图所示：</p>
+<p><img src="https://s1.ax1x.com/2020/07/15/Uwji0x.png" class="lazyload" data-srcset="https://s1.ax1x.com/2020/07/15/Uwji0x.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="接入"></p>
+<p>主域名：填写二级域名，如baidu.com</p>
+<p>子域名：可以先不添加</p>
+<p>回源方式：CNAME/IP都行，CNAME既可以用CNAME也可以用IP解析</p>
+<p>回源域名：你服务器的IP地址，如8.8.8.8</p>
+<p>备注：随便填</p>
+<p>添加完后就是这样的(有些地方可能不太一样)</p>
+<p><img src="https://s1.ax1x.com/2020/07/15/UwjPn1.png" class="lazyload" data-srcset="https://s1.ax1x.com/2020/07/15/UwjPn1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="添加完成后"></p>
+<p>现在就需要解析了</p>
+<p>先去解析设置里添加解析</p>
+<p><img src="https://s1.ax1x.com/2020/07/15/Uwj9XR.png" class="lazyload" data-srcset="https://s1.ax1x.com/2020/07/15/Uwj9XR.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="解析位置"></p>
+<p>这一步不用多说，完成后别忘了点击下面的提交</p>
+<p><img src="https://s1.ax1x.com/2020/07/15/Uwjpc9.png" class="lazyload" data-srcset="https://s1.ax1x.com/2020/07/15/Uwjpc9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="域名解析"></p>
+<p>接下来就选一个好节点了(信息来源于网络)</p>
+<p>[collapse status=”false” title=”所有节点IP”]172.69.184.0/22 菲律宾</p>
+<p>162.158.136.0/22</p>
+<p>162.158.228.0/22</p>
+<p>172.69.188.0/22 立陶宛</p>
+<p>103.22.202.0/24 香港</p>
+<p>103.22.203.0/24</p>
+<p>108.162.222.0/24</p>
+<p>108.162.223.0/24</p>
+<p>162.158.176.0/24</p>
+<p>162.158.177.0/24</p>
+<p>162.158.178.0/24</p>
+<p>162.158.179.0/24</p>
+<p>172.68.248.0/22</p>
+<p>172.69.96.0/22</p>
+<p>172.69.176.0/22</p>
+<p>173.245.62.0/24</p>
+<p>103.31.4.0/23 台北</p>
+<p>162.158.224.0/22</p>
+<p>162.158.240.0/22</p>
+<p>172.69.72.0/22 澳门</p>
+<p>172.69.80.0/22 柬埔寨</p>
+<p>108.162.208.0/24 加拿大</p>
+<p>108.162.240.0/24</p>
+<p>108.162.241.0/24</p>
+<p>162.158.144.0/24</p>
+<p>162.158.145.0/24</p>
+<p>162.158.146.0/24</p>
+<p>162.158.147.0/24</p>
+<p>172.69.156.0/22</p>
+<p>172.69.212.0/22</p>
+<p>172.69.216.0/22</p>
+<p>108.162.214.0/24 洛杉矶</p>
+<p>108.162.215.0/24</p>
+<p>141.101.72.0/24</p>
+<p>162.158.56.0/22</p>
+<p>172.68.44.0/22</p>
+<p>172.68.208.0/22</p>
+<p>172.69.32.0/22</p>
+<p>173.245.48.0/24</p>
+<p>108.162.216.0/24 芝加哥</p>
+<p>108.162.217.0/24</p>
+<p>141.101.73.0/24</p>
+<p>162.158.72.0/22</p>
+<p>172.68.56.0/24</p>
+<p>172.68.57.0/24</p>
+<p>172.68.58.0/24</p>
+<p>172.68.59.0/24</p>
+<p>162.158.140.0/24 凤凰城</p>
+<p>162.158.141.0/24</p>
+<p>162.158.142.0/24</p>
+<p>162.158.143.0/24</p>
+<p>108.162.218.0/24 纽瓦克</p>
+<p>108.162.219.0/24</p>
+<p>162.158.60.0/22</p>
+<p>173.245.52.0/24 纽约</p>
+<p>108.162.220.0/24 达拉斯</p>
+<p>108.162.221.0/24</p>
+<p>141.101.74.0/24</p>
+<p>172.69.64.0/21</p>
+<p>162.158.252.0/22 圣何塞</p>
+<p>172.68.80.0/22</p>
+<p>172.68.132.0/22</p>
+<p>172.68.140.0/22</p>
+<p>172.68.188.0/22</p>
+<p>172.69.16.0/22</p>
+<p>162.158.244.0/22 拉斯维加斯</p>
+<p>108.162.226.0/24 日本东京</p>
+<p>108.162.227.0/24</p>
+<p>103.22.200.0/23</p>
+<p>162.158.4.0/22</p>
+<p>162.158.116.0/22</p>
+<p>172.69.108.0/22</p>
+<p>172.69.152.0/22 日本大阪</p>
+<p>108.162.228.0/24 法国巴黎</p>
+<p>141.101.66.0/24</p>
+<p>141.101.67.0/24</p>
+<p>141.101.68.0/24</p>
+<p>141.101.69.0/24</p>
+<p>108.162.229.0/24</p>
+<p>141.101.88.0/22</p>
+<p>162.158.192.0/24</p>
+<p>162.158.193.0/24</p>
+<p>162.158.194.0/24</p>
+<p>162.158.195.0/24</p>
+<p>172.69.224.0/22</p>
+<p>162.158.120.0/24 迈阿密</p>
+<p>162.158.121.0/24</p>
+<p>162.158.122.0/24</p>
+<p>162.158.123.0/24</p>
+<p>108.162.210.0/24</p>
+<p>108.162.211.0/24</p>
+<p>108.162.212.0/24</p>
+<p>108.162.213.0/24</p>
+<p>108.162.236.0/24 亚特兰大</p>
+<p>108.162.237.0/24</p>
+<p>108.162.238.0/24</p>
+<p>162.158.124.0/22</p>
+<p>162.158.184.0/24</p>
+<p>162.158.185.0/24</p>
+<p>162.158.186.0/24</p>
+<p>162.158.187.0/24</p>
+<p>172.68.32.0/22 丹佛</p>
+<p>172.68.36.0/22 圣路易斯</p>
+<p>172.68.52.0/22 波士顿</p>
+<p>108.162.243.0/24 西雅图</p>
+<p>108.162.244.0/24</p>
+<p>108.162.245.0/24</p>
+<p>108.162.246.0/24</p>
+<p>162.158.104.0/24</p>
+<p>162.158.105.0/24</p>
+<p>162.158.106.0/24</p>
+<p>162.158.107.0/24</p>
+<p>162.158.76.0/22 阿什本</p>
+<p>172.68.64.0/22</p>
+<p>172.69.60.0/22</p>
+<p>173.245.54.0/24</p>
+<p>188.114.104.0/24</p>
+<p>172.68.148.0/22 堪萨斯</p>
+<p>172.68.204.0/22 底特律</p>
+<p>172.68.172.0/22 波兰特</p>
+<p>172.69.168.0/22 休斯顿</p>
+<p>172.69.40.0/22 盐湖城</p>
+<p>172.68.228.0/22 圣地亚哥</p>
+<p>172.68.68.0/22 宾法尼西亚费城</p>
+<p>172.68.72.0/22 田纳西州纳什维尔</p>
+<p>172.68.76.0/22 佛罗里达州坦帕</p>
+<p>172.68.88.0/22 内布拉斯加州奥马哈</p>
+<p>172.69.4.0/22 德克萨斯州麦卡伦</p>
+<p>172.69.48.0/22 宾法尼西亚州匹兹堡</p>
+<p>172.69.88.0/22 印第安纳州印第安纳波利斯</p>
+<p>172.69.140.0/22 加利福尼亚州萨克拉门托</p>
+<p>172.69.180.0/22 佛罗里达州塔拉哈西</p>
+<p>172.69.196.0/22 田纳西州孟菲斯</p>
+<p>172.69.208.0/22 佛罗里达州杰克逊维尔</p>
+<p>108.162.247.0/24 澳大利亚</p>
+<p>108.162.248.0/24</p>
+<p>108.162.249.0/24</p>
+<p>108.162.250.0/24</p>
+<p>162.158.0.0/22</p>
+<p>172.68.0.0/22</p>
+<p>172.68.84.0/22</p>
+<p>172.68.116.0/22</p>
+<p>108.162.252.0/24 韩国</p>
+<p>141.101.82.0/24</p>
+<p>141.101.83.0/24</p>
+<p>141.101.84.0/24</p>
+<p>141.101.85.0/24</p>
+<p>162.158.188.0/24</p>
+<p>162.158.189.0/24</p>
+<p>162.158.190.0/24</p>
+<p>162.158.191.0/24</p>
+<p>108.162.253.0/24 美国明尼苏达州明尼阿波利斯</p>
+<p>162.158.212.0/22</p>
+<p>108.162.254.0/24 旧金山</p>
+<p>141.101.64.0/24 荷兰</p>
+<p>141.101.65.0/24</p>
+<p>141.101.75.0/24</p>
+<p>141.101.76.0/24</p>
+<p>141.101.77.0/24</p>
+<p>141.101.104.0/24</p>
+<p>162.158.108.0/22</p>
+<p>172.69.52.0/22</p>
+<p>141.101.70.0/24 英国伦敦</p>
+<p>141.101.71.0/24</p>
+<p>141.101.98.0/24</p>
+<p>141.101.99.0/24</p>
+<p>141.101.105.0/24</p>
+<p>141.101.106.0/24</p>
+<p>141.101.107.0/24</p>
+<p>162.158.152.0/22</p>
+<p>162.158.156.0/22</p>
+<p>172.64.16.0/20</p>
+<p>172.69.124.0/22</p>
+<p>188.114.105.0/24</p>
+<p>162.158.32.0/22 英国曼彻斯底</p>
+<p>172.69.172.0/22 英国爱丁堡</p>
+<p>162.158.36.0/24 爱尔兰</p>
+<p>162.158.37.0/24</p>
+<p>162.158.38.0/24</p>
+<p>162.158.39.0/24</p>
+<p>172.69.120.0/22</p>
+<p>162.158.82.0/24 德国法兰克福</p>
+<p>162.158.83.0/24</p>
+<p>162.158.84.0/24</p>
+<p>162.158.85.0/24</p>
+<p>162.158.86.0/24</p>
+<p>162.158.87.0/24</p>
+<p>162.158.88.0/24</p>
+<p>162.158.89.0/24</p>
+<p>162.158.90.0/24</p>
+<p>162.158.91.0/24</p>
+<p>162.158.92.0/24</p>
+<p>162.158.93.0/24</p>
+<p>162.158.94.0/24</p>
+<p>162.158.95.0/24</p>
+<p>162.158.112.0/24 德国柏林</p>
+<p>162.158.113.0/24</p>
+<p>162.158.114.0/24</p>
+<p>162.158.115.0/24</p>
+<p>162.158.200.0/22 德国汉堡</p>
+<p>172.68.108.0/22 德国慕尼黑</p>
+<p>162.158.148.0/22 瑞士</p>
+<p>162.158.180.0/22 瑞典</p>
+<p>172.68.180.0/22</p>
+<p>162.158.96.0/24 阿联酋</p>
+<p>162.158.97.0/24</p>
+<p>162.158.98.0/24</p>
+<p>162.158.99.0/24</p>
+<p>141.101.95.0/24 捷克</p>
+<p>141.101.96.0/24</p>
+<p>141.101.97.0/24</p>
+<p>172.68.212.0/22</p>
+<p>162.158.100.0/24 波兰华沙</p>
+<p>162.158.101.0/24</p>
+<p>162.158.102.0/24</p>
+<p>162.158.103.0/24</p>
+<p>172.68.136.0/22</p>
+<p>141.101.100.0/22 智利</p>
+<p>172.68.112.0/22</p>
+<p>141.101.108.0/24 哥伦比亚</p>
+<p>141.101.109.0/24</p>
+<p>141.101.110.0/24</p>
+<p>141.101.111.0/24</p>
+<p>172.69.204.0/22</p>
+<p>162.158.8.0/24 卡塔尔多哈</p>
+<p>162.158.9.0/24</p>
+<p>162.158.10.0/24</p>
+<p>162.158.11.0/24</p>
+<p>162.158.12.0/22 科威特</p>
+<p>162.158.16.0/22 罗马尼亚</p>
+<p>172.69.148.0/22</p>
+<p>162.158.20.0/22 法国马赛</p>
+<p>172.69.220.0/22 法国</p>
+<p>162.158.24.0/24 新加坡</p>
+<p>162.158.25.0/24</p>
+<p>162.158.26.0/24</p>
+<p>162.158.27.0/24</p>
+<p>162.158.160.0/20</p>
+<p>172.68.144.0/22</p>
+<p>172.69.132.0/22</p>
+<p>162.158.28.0/24 阿曼</p>
+<p>162.158.29.0/24</p>
+<p>162.158.30.0/24</p>
+<p>162.158.31.0/24</p>
+<p>162.158.40.0/24 肯尼亚</p>
+<p>162.158.41.0/24</p>
+<p>162.158.42.0/24</p>
+<p>162.158.43.0/24</p>
+<p>162.158.44.0/24 印度</p>
+<p>162.158.45.0/24</p>
+<p>162.158.46.0/24</p>
+<p>162.158.47.0/24</p>
+<p>162.158.48.0/24</p>
+<p>162.158.49.0/24</p>
+<p>162.158.50.0/24</p>
+<p>162.158.51.0/24</p>
+<p>162.158.52.0/24</p>
+<p>162.158.53.0/24</p>
+<p>162.158.54.0/24</p>
+<p>162.158.55.0/24</p>
+<p>172.68.160.0/22</p>
+<p>172.69.104.0/22</p>
+<p>162.158.128.0/22 埃及</p>
+<p>162.158.132.0/24 丹麦</p>
+<p>162.158.133.0/24</p>
+<p>162.158.134.0/24</p>
+<p>162.158.135.0/24</p>
+<p>162.158.196.0/24 意大利米兰</p>
+<p>162.158.197.0/24</p>
+<p>162.158.198.0/24</p>
+<p>162.158.199.0/24</p>
+<p>188.114.100.0/24</p>
+<p>188.114.101.0/24</p>
+<p>188.114.102.0/24</p>
+<p>188.114.103.0/24</p>
+<p>172.68.196.0/22 意大利罗马</p>
+<p>172.68.48.0/22 奥地利</p>
+<p>172.69.0.0/22</p>
+<p>162.158.208.0/22 保加利亚</p>
+<p>172.68.60.0/22 希腊</p>
+<p>172.69.56.0/22</p>
+<p>162.158.220.0/22 挪威</p>
+<p>162.158.232.0/22 比利时</p>
+<p>162.158.236.0/22 芬兰</p>
+<p>162.158.248.0/22 乌克兰</p>
+<p>172.68.236.0/22</p>
+<p>172.68.4.0/22 泰国</p>
+<p>172.68.104.0/22</p>
+<p>172.68.232.0/22</p>
+<p>172.68.240.0/22</p>
+<p>172.68.8.0/22 俄罗斯</p>
+<p>172.68.12.0/22</p>
+<p>172.68.244.0/22</p>
+<p>172.68.16.0/20 巴西圣保罗</p>
+<p>188.114.96.0/24</p>
+<p>188.114.97.0/24</p>
+<p>188.114.98.0/24</p>
+<p>188.114.99.0/24</p>
+<p>172.68.216.0/22 巴西里约热内卢</p>
+<p>172.68.40.0/22 安哥拉</p>
+<p>172.68.96.0/22 巴拿马</p>
+<p>172.68.92.0/22 西班牙</p>
+<p>188.114.106.0/24</p>
+<p>188.114.107.0/24</p>
+<p>188.114.108.0/24</p>
+<p>188.114.109.0/24</p>
+<p>188.114.110.0/24</p>
+<p>188.114.111.0/24</p>
+<p>172.68.100.0/22 葡萄牙</p>
+<p>172.68.120.0/22 库拉索</p>
+<p>172.68.124.0/22 亚美尼亚</p>
+<p>172.68.128.0/22 吉布提</p>
+<p>172.68.152.0/22 塞尔维亚</p>
+<p>172.68.176.0/22 厄瓜多尔</p>
+<p>172.68.184.0/22 南非</p>
+<p>172.69.112.0/22</p>
+<p>197.234.240.0/22</p>
+<p>172.68.200.0/22 斯里兰卡</p>
+<p>172.68.220.0/22 克罗地亚</p>
+<p>172.68.224.0/22 匈牙利</p>
+<p>172.69.76.0/22 尼泊尔</p>
+<p>172.69.84.0/22 黎巴嫩</p>
+<p>172.69.92.0/22 毛里求斯</p>
+<p>172.69.100.0/22 伊拉克</p>
+<p>172.69.116.0/22 土耳其</p>
+<p>172.69.128.0/22 以色列</p>
+<p>172.69.136.0/22 爱沙尼亚</p>
+<p>172.69.144.0/22 冰岛</p>
+<p>172.69.164.0/22 墨西哥</p>
+<p>172.69.192.0/22 拉脱维亚</p>
+<p>172.69.200.0/22 摩尔多瓦[/collapse]</p>
+<p>[collapse status=”false” title=”CF与百度云加速合作的节点”]162.159.211.4-103<br>103.21.244.0/22<br>103.22.200.0/22<br>103.31.4.0/22<br>104.16.0.0/12<br>108.162.192.0/18<br>131.0.72.0/22<br>141.101.64.0/18<br>162.158.0.0/15<br>172.64.0.0/13<br>173.245.48.0/20<br>188.114.96.0/20<br>190.93.240.0/20<br>197.234.240.0/22<br>198.41.128.0/17[/collapse]</p>
+<p>[collapse status=”false” title=”推荐节点”]CloudFlare 百度云合作 ip：</p>
+<p>162.159.208.4-162.159.208.103</p>
+<p>162.159.209.4-162.159.209.103</p>
+<p>162.159.210.4-162.159.210.103</p>
+<p>162.159.211.4-162.159.211.103</p>
+<p>各线路推荐列表：<br>电信：推荐走圣何塞，例：104.16.160.* 或者上面的百度云合作 ip。<br>移动：推荐走移动香港，例：172.64.32.<em>、141.101.115.</em> 或者 104.23.240.0-104.23.243.254。<br>联通：没发布什么好线路，可走圣何塞。例：104.16.160.* 或者 104.23.240.0-104.23.243.254。也可以试一下走亚特兰大 108.162.236.*（日前不可用。） 。[/collapse]</p>
+<p>自己去ping一下看下哪些延迟低</p>
+<p>由于我们的接入方式并不是NS接入，所以我们接下来还要去DNS服务商(如DNSpod)那里解析域名</p>
+<p>用A记录到你选出来的节点IP</p>
+<p>之后稍等片刻，你的CF自定义节点就完成了~</p>
+
+
   </div>
   
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-01-01T08:00:00+08:00">2021-01-01</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%89%B9%E6%AE%8A/">特殊</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%89%B9%E6%AE%8A/" itemprop="url"><span itemprop="name">特殊</span></a>
-            </span>
-          
-        
-      </div>
+  
+    
+    <div class="footer">
       
-        <div>
-          <a class="readmore" href="/archives/2021/43.html" itemprop="url">
-            阅读全文
-          </a>
+      
+      
+        <div class="copyright">
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href="https://iktao.cn/archives/2020/25.html">https://iktao.cn/archives/2020/25.html</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class="article-meta" id="bottom">
+    <div class="new-meta-box">
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-02-16T15:41:24+08:00">
+  <a class="notlink" href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年2月16日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/40.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/40.html" itemprop="url">
-        断章
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->
-
-<h2 id="断章"><a href="#断章" class="headerlink" title="断章"></a>断章</h2><h3 id="卞之琳"><a href="#卞之琳" class="headerlink" title="卞之琳"></a>卞之琳</h3><p>你站在桥上看风景，</p>
-<p>看风景人在楼上看你。</p>
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-12-20T02:30:00+08:00">2020-12-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" itemprop="url"><span itemprop="name">默认分类</span></a>
-            </span>
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>教程</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%89%93%E9%80%A0%E4%B8%AA%E6%80%A7%E5%8C%96%E7%BD%91%E7%AB%99%E7%B3%BB%E5%88%97/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>打造个性化网站系列</p></a></div>
+  <span hidden itemprop="keywords">教程 打造个性化网站系列</span>
+
+
+        
+      
+        
           
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2020/40.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/39.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/39.html" itemprop="url">
-        几种图床的使用
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->
-
-<p>大家应该都知道前段时间JsDeliver不给用图床了，得找个代替，国内有啥好用的图床呢？</p>
-<p>知名些的有Imgur、smms等，但是速度不是一般般就是被墙</p>
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-11-15T07:56:00+08:00">2020-11-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+      
+        <a class="-mob-share-qq" title rel="external nofollow noopener noreferrer" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://iktao.cn/archives/2020/25.html&title=Cloudflare如何使用与自定义节点的添加 - TAOG&summary=">
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
-            </span>
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
           
-        
-      </div>
+        </a>
       
-        <div>
-          <a class="readmore" href="/archives/2020/39.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
+    
       
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/38.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/38.html" itemprop="url">
-        白嫖！10GB免流海外BackBlaze对象存储【可套CDN】
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->## 此文转载于cyfan.top
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-10-05T10:41:00+08:00">2020-10-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%88%86%E4%BA%AB/">分享</a>
+        <a class="-mob-share-qzone" title rel="external nofollow noopener noreferrer" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://iktao.cn/archives/2020/25.html&title=Cloudflare如何使用与自定义节点的添加 - TAOG&summary=">
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%88%86%E4%BA%AB/" itemprop="url"><span itemprop="name">分享</span></a>
-            </span>
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
           
-        
-      </div>
+        </a>
       
-        <div>
-          <a class="readmore" href="/archives/2020/38.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/32.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/32.html" itemprop="url">
-        在网页中插入一言API
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
     
       
-        在网页中插入一言API
-
-一言是什么？简单来说，就是随机输出一句话/诗
-
-如何在网页中调用？这就得用到官方的api接口了
-可能你会看不懂官方文档，没事，接着往下看
-文档中写了一个简单的调用方法
-12&lt;!-- 新 API 方法， 十分简洁 --&gt;&lt;script src=&quot;https://v1.hitokoto.cn/?encode=js&amp;select=%23...
+        <a class="-mob-share-weibo" title rel="external nofollow noopener noreferrer" target="_blank" href="http://service.weibo.com/share/share.php?url=https://iktao.cn/archives/2020/25.html&title=Cloudflare如何使用与自定义节点的添加 - TAOG&summary=">
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-09-11T14:38:00+08:00">2020-09-11</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2020/32.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/31.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/31.html" itemprop="url">
-        关于JsDeliver CDN表明禁止使用图床
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      
-        不知大家最近在博客交流QQ群里有无看到这样一条消息：
 
-[scode type=”share”]提醒一下：2020年8月 JsDeliver新增使用政策 禁止以下行为：
-托管或访问以下内容：
-包含任何形式的恶意软件或有害代码，
-侵犯他人的所有权，
-是色情的
-在欧盟或美国可能是非法的。
-滥用服务及其资源，或将jsDelivr用作通用文件或媒体托管服务。例如，这包括：
-运行图像托管网站，并使用j...
+
+        
       
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
   </div>
+
+
   
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-08-30T11:41:18+08:00">2020-08-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" itemprop="url"><span itemprop="name">默认分类</span></a>
-            </span>
-          
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class="readmore" href="/archives/2020/31.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
+        <a class="prev" href="/archives/2020/26.html">
+          <p class="title"><i class="fas fa-chevron-left" aria-hidden="true"></i>计算器3.0完成！</p>
+          <p class="content">继上次[记录一次编程记录](https://taog.top/archives/2020/22.html)制作的计算器2.0后更新至了3.0(还是放假太闲了)
+本次主要的更新内容有：1.在编程的...</p>
+        </a>
+      
+      
+        <a class="next" href="/archives/2020/23.html">
+          <p class="title">优化typecho的评论系统教程<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class="content">优化typecho的评论系统教程
+
+关于typecho[scode type=”share”]typecho是由中国团队开发的一个博客系统
+某些地方很像隔壁Wordpress
+但是相对于隔壁
+它...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- Custom Files postEnd begin-->
   
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 3
-        </p>
-        
-          <a class="next" rel="next" href="/page/2/">
-            <section class="post next white-box shadow">
-              &nbsp;下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
+
+  
+  <article class="post white-box reveal shadow" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/archives/2020/25.html#comments">
+    </span>
+    <p ct><i class="fas fa-comments"></i> 评论</p>
+    
+    
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+  
+
+
+
 
 
 </div>
@@ -3317,265 +3221,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow floatable desktop mobile pjax">
-  <div class="content">
-    
-      
-        <a class="avatar flat-box circle" href="/about/">
-          <img no-lazy src="https://doge.cdn.iktao.cn/img/Logoii-ist.webp" alt="This is a picture without description" >
-        </a>
-      
-    
-    
-      <div class="text">
-        
-        
-          <p>风一去不回来</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml" class="social fas fa-rss flat-btn" target="_blank" rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:taogsem@gmail.com" class="social fas fa-envelope flat-btn" target="_blank" rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/taoggt/" class="social fab fa-github flat-btn" target="_blank" rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/" class="social fas fa-headphones-alt flat-btn" target="_blank" rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget text shadow floatable desktop mobile pjax">
-  
-  <header>
-    
-      <a href="https://iktao.cn/"><i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i><span class="name">公告</span></a>
-    
-  </header>
 
 
-  <div class="content">
-    
-      <p>由于以前的文是在typecho写的，所以在2021/2之前的所有文章图片，排版都可能有问题</p>
-
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget category shadow floatable desktop pjax">
+  <section class="widget toc-wrapper shadow floatable desktop mobile pjax" id="toc-div">
     
   <header>
     
-      <a href="/categories/"><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class="name">文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class="name">本文目录</span>
     
   </header>
 
 
     <div class="content">
-      <ul class="entry navigation">
         
-          <li><a class="flat-box" title="/categories/%E5%88%86%E4%BA%AB/" href="/categories/%E5%88%86%E4%BA%AB/" active-action="action-categoriesE58886E4BAAB"><div class="name">分享</div><div class="badge">(5)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/" active-action="action-categoriesE69599E7A88B"><div class="name">教程</div><div class="badge">(10)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%89%B9%E6%AE%8A/" href="/categories/%E7%89%B9%E6%AE%8A/" active-action="action-categoriesE789B9E6AE8A"><div class="name">特殊</div><div class="badge">(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/" active-action="action-categoriesE7AC94E8AEB0"><div class="name">笔记</div><div class="badge">(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%AF%84%E6%B5%8B/" href="/categories/%E8%AF%84%E6%B5%8B/" active-action="action-categoriesE8AF84E6B58B"><div class="name">评测</div><div class="badge">(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" active-action="action-categoriesE9BB98E8AEA4E58886E7B1BB"><div class="name">默认分类</div><div class="badge">(3)</div></a></li>
-        
-      </ul>
     </div>
   </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow floatable desktop mobile pjax">
-    
-  <header>
-    
-      <a href="/tags/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class="name">标签</span></a>
-    
-  </header>
-
-
-    <div class="content">
-      <a href="/tags/C-%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97/" style="font-size: 14px; color: #999">C#教程系列</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 17.33px; color: #828282">分享</a> <a href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97/" style="font-size: 14px; color: #999">建站教程系列</a> <a href="/tags/%E6%89%93%E9%80%A0%E4%B8%AA%E6%80%A7%E5%8C%96%E7%BD%91%E7%AB%99%E7%B3%BB%E5%88%97/" style="font-size: 20.67px; color: #6c6c6c">打造个性化网站系列</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 17.33px; color: #828282">笔记</a> <a href="/tags/%E8%AF%84%E6%B5%8B/" style="font-size: 17.33px; color: #828282">评测</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget shadow floatable desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class="name">站点信息</span>
-    
-  </header>
-
-
-  <div class="content">
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>23 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2020/02/10'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="lc-uv"><span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="lc-sv"><span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Sat Oct 02 2021 22:45:29 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-10-02 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-10-02 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3611,8 +3292,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Cloudflare如何使用与自定义节点的添加";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3621,15 +3302,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="full";
-      cover_wrapper.style.display="";
-      scroll_down.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
+      scroll_down.style.display="none";
     
   
 </script>
@@ -3749,8 +3430,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633185929508')
-      volantis.js('/js/message.js?time=1633185929508', () => {
+      volantis.css('/css/message.css?time=1633185929375')
+      volantis.js('/js/message.js?time=1633185929375', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3795,8 +3476,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633185929508')
-      volantis.js('/js/message.js?time=1633185929508', () => {
+      volantis.css('/css/message.css?time=1633185929375')
+      volantis.js('/js/message.js?time=1633185929375', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3855,8 +3536,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633185929508')
-      volantis.js('/js/message.js?time=1633185929508', () => {
+      volantis.css('/css/message.css?time=1633185929375')
+      volantis.js('/js/message.js?time=1633185929375', () => {
         hideMessage(done);
       });
     } else {
@@ -3997,7 +3678,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       volantis.APlayerController = {};
     
-    volantis.js('/js/rightMenu.js?time=1633185929508')
+    volantis.js('/js/rightMenu.js?time=1633185929375')
   </script>
 
 
@@ -4110,19 +3791,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1633185929508")
+        volantis.js("/js/plugins/sites.js?time=1633185929375")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1633185929508")
+        volantis.js("/js/plugins/friends.js?time=1633185929375")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1633185929508")
+        volantis.js("/js/plugins/contributors.js?time=1633185929375")
       }
     
   };
@@ -4244,7 +3925,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1633185929508.js"></script>
+<script src="/js/app.js?time=1633185929375.js"></script>
 
 
 <!-- optional -->
@@ -4257,7 +3938,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1633185929508");
+    return volantis.js("/js/search/hexo.js?time=1633185929375");
   }
 
   function loadSearchService() {
@@ -4724,7 +4405,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"TAOG","url":"https://iktao.cn/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"TAOG","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://iktao.cn/","sameAs":["https://github.com/volantis-x"],"description":"一个小破博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://iktao.cn/","name":"TAOG"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"TAOG","url":"https://iktao.cn/","keywords":"blog,TAOG,TAOG's Blog,TAOGblog,TAOG小站","description":"一个小破博客","author":{"@type":"Person","name":"TAOG","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://iktao.cn/","description":"一个小破博客"},"publisher":{"@type":"Organization","name":"TAOG","url":"https://iktao.cn/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://iktao.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"TAOG","url":"https://iktao.cn/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"TAOG","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://iktao.cn/","sameAs":["https://github.com/volantis-x"],"description":"一个小破博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://iktao.cn/","name":"TAOG"}},{"@type":"ListItem","position":2,"item":{"@id":"https://iktao.cn/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"https://iktao.cn/archives/2020/25.html","name":"Cloudflare如何使用与自定义节点的添加"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Cloudflare如何使用与自定义节点的添加","description":"","datePublished":"2020-07-15T03:09:00.000Z","dateModified":"2021-02-16T07:41:24.230Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://iktao.cn/archives/2020/25.html"},"author":{"@type":"Person","name":"TAOG","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://iktao.cn/"},"publisher":{"@type":"Organization","name":"TAOG","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://iktao.cn/archives/2020/25.html","wordCount":0,"articleSection":"教程","keywords":"教程,打造个性化网站系列","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->

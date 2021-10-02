@@ -4,8 +4,8 @@
   <meta name="generator" content="Hexo 5.3.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://iktao.cn/">
+  
+  <link rel="canonical" href="https://iktao.cn/archives/2021/mysql-基础语句.html">
   <!-- 渲染优化 -->
   <meta http-equiv="x-dns-prefetch-control" content="on">
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
@@ -20,23 +20,26 @@
   <meta content="TAOG" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1633185929508" as="style">
+  <link rel="preload" href="/css/style.css?time=1633185929322" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>TAOG</title>
-  <meta name="keywords" content="blog,TAOG,TAOG's Blog,TAOGblog,TAOG小站">
-  <meta name="description" content="一个小破博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="TAOG">
-<meta property="og:url" content="https://iktao.cn/index.html">
+  <title>MySQL-基础语句 - TAOG</title>
+  <meta name="keywords" content="教程,笔记,blog,TAOG,TAOG's Blog,TAOGblog,TAOG小站">
+  <meta name="description" content="介绍此文为我学习MySQL基本语句时所记录的笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL-基础语句">
+<meta property="og:url" content="https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html">
 <meta property="og:site_name" content="TAOG">
-<meta property="og:description" content="一个小破博客">
+<meta property="og:description" content="介绍此文为我学习MySQL基本语句时所记录的笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2021-08-19T12:00:00.000Z">
+<meta property="article:modified_time" content="2021-08-19T12:38:36.510Z">
 <meta property="article:author" content="TAOG">
-<meta property="article:tag" content="blog,TAOG,TAOG&#39;s Blog,TAOGblog,TAOG小站">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1791,8 +1794,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1633185929508" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1633185929508"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1633185929322" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1633185929322"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2553,7 +2556,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class="cover-wrapper  focus" style="display: ;">
+      <div id="half" class="cover-wrapper post focus" style="display: ;">
         
   <div class="cover-bg lazyload placeholder" data-bg="https://unpkg.zhimg.com/iktao@1.2.1/img/cover/cover925.jpg"></div>
 
@@ -2594,7 +2597,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-        <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
     
   
@@ -2604,710 +2607,623 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="TAOG">
   </span>
   
-  
+
+
   
     <div class="headimg-div">
-      <a class="headimg-a" href="/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html">
-        <img itemprop="image" class="headimg lazyload" alt="MySQL-基础语句" src="https://unpkg.zhimg.com/iktao@1.2.0/img/cover/mysqlcover.jpg" class="lazyload" data-srcset="https://unpkg.zhimg.com/iktao@1.2.0/img/cover/mysqlcover.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+      <a class="headimg-a" href="/" onclick="return false;" title="Click me!" >
+        <img itemprop="image" class="headimg lazyload" src="https://unpkg.zhimg.com/iktao@1.2.0/img/cover/mysqlcover.jpg" class="lazyload" data-srcset="https://unpkg.zhimg.com/iktao@1.2.0/img/cover/mysqlcover.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
       </a>
     </div>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html" itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         MySQL-基础语句
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>此文为我学习MySQL基本语句时所记录的笔记</p>
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
+      </h1>
+      <div class="new-meta-box">
         
-        <time itemprop="dateCreated datePublished" datetime="2021-08-19T20:00:00+08:00">2021-08-19</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class="new-meta-item author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class="author" href="/" rel="nofollow">
+    <img itemprop="image" src="https://doge.cdn.iktao.cn/img/Logoii-ist.webp" class="lazyload" data-srcset="https://doge.cdn.iktao.cn/img/Logoii-ist.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+    <p itemprop="name">TAOG</p>
+  </a>
 </div>
 
-          </div>
+          
         
+          
+            
+  <div class="new-meta-item category">
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-08-19T20:00:00+08:00">
+  <a class="notlink" href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年8月19日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class="notlink" href="/" onclick="return false;" title="Click me!" >
       
+      <div id="lc-pv" data-title="MySQL-基础语句" data-path="/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/46.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/46.html" itemprop="url">
-        C#学习笔记--属性
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <blockquote>
-<p>属性（Property）的访问器（accessor）包含有助于获取（读取或计算）或设置（写入）属性的可执行语句。访问器（accessor）声明可包含一个 get 访问器、一个 set 访问器，或者同时包含二者。 </p>
-<p>—菜鸟教程</p>
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><div class="story post-story"><p>此文为我学习MySQL基本语句时所记录的笔记</p>
+<a id="more" href="/" onclick="return false;" title="Click me!" ></a>
+
+</div><h2 id="MySQL连接"><a href="#MySQL连接" class="headerlink" title="MySQL连接"></a>MySQL连接</h2><div class="story post-story"><p>打开DOS输入 <code>mysql -u root -p</code>，之后输入密码</p>
+</div><h2 id="SQL语句书写规范"><a href="#SQL语句书写规范" class="headerlink" title="SQL语句书写规范"></a>SQL语句书写规范</h2><div class="story post-story"><ul>
+<li>SQL语句由<code>;</code>结尾</li>
+<li>SQL语句不区分大小写(但为了方便理解，一般关键字大写，数据库名、表名、字段名小写。插入表中的数据是区分大小写的)</li>
+<li>插入数据中如有字符串需要由单引号<code>&#39; &#39;</code>包住</li>
+<li>SQL语句中的所有符号都应使用半角符号</li>
+<li>表名的开头建议以<code>t_</code>或<code>tbl_</code>开头，这是为了便于区分数据库中表与其它数据</li>
+</ul>
+</div><h2 id="数据库指令"><a href="#数据库指令" class="headerlink" title="数据库指令"></a>数据库指令</h2><div class="story post-story"><h3 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库"></a>查看数据库</h3><p><code>SHOW DATEBASES;</code> 查看或显示当前用户权限范围以内的数据库</p>
+<h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><p><code>CREATE DATEBASES [数据库名];</code> 创建一个数据库</p>
+<h3 id="使用数据库"><a href="#使用数据库" class="headerlink" title="使用数据库"></a>使用数据库</h3><p><code>USE [数据库名];</code> 使用一个数据库<br>如果出现<code>[数据库名] changed</code> 则表明选择数据库成功</p>
+<hr>
+</div><h2 id="数据表指令"><a href="#数据表指令" class="headerlink" title="数据表指令"></a>数据表指令</h2><div class="story post-story"><h3 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [数据表名](</span><br><span class="line">　　[字段名] [字段类型] [字段约束]</span><br><span class="line">　　......</span><br><span class="line">)engine [存储引擎] charest [字符编码];</span><br></pre></td></tr></table></figure>
+<p>其中，非必须填写的有<br>[字段约束]，engine [存储引擎]，charest [字符编码]</p>
+<h4 id="字段类型"><a href="#字段类型" class="headerlink" title="[字段类型]"></a>[字段类型]</h4><blockquote>
+<p>常用的字段类型有</p>
 </blockquote>
-    
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>最大长度</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>INT</td>
+<td>2147483647</td>
+<td>存储整形</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>9223372036854775807</td>
+<td>存储长整形</td>
+</tr>
+<tr>
+<td>FLOAT</td>
+<td></td>
+<td>存储浮点型</td>
+</tr>
+<tr>
+<td>CHAR</td>
+<td>255</td>
+<td>存储字符串，固定长度，比VARCHAR效率高</td>
+</tr>
+<tr>
+<td>VARCHAR</td>
+<td>65535 Byte</td>
+<td>存储字符串，动态调整长度，效率不如VARCHAR</td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>1000-01-01 ~ 9999-12-31</td>
+<td>存储日期</td>
+</tr>
+<tr>
+<td>BLOB</td>
+<td></td>
+<td>存储二进制大对象(图片，视频等流媒体信息</td>
+</tr>
+<tr>
+<td>CLOB</td>
+<td></td>
+<td>存储字符大对象，可以存储好长好长好长…的字符串</td>
+</tr>
+</tbody></table>
+<p>注：<code>INSERT</code>语句无法插入数据到<code>BLOB</code>类型与<code>CLOB</code>类型，需要用到程序中的流来处理</p>
+<blockquote>
+<p> 该使用哪种字符串类类型</p>
+</blockquote>
+<p>　　- <code>CHAR</code> 可以放一些固定长度的数据，如性别(男/女)等<br>　　- <code>VARCHAR</code> 可以动态调整长度，非固定的数据，如姓名(可能有两字/三字/四字等)<br>　　- <code>CLOB</code> 可以放甚至4个G的字符串，一般放较长的字符串进去<br>　　- <code>CHAR</code>每个英文字符占用1字节，中文字符占用2字节<br>　　- <code>VARCHAR</code>每个字符都占用2字节</p>
+<blockquote>
+<p> 设置字段显示宽度</p>
+</blockquote>
+<p> 可见-&gt;<a target="_blank" rel="external nofollow noopener noreferrer" href="https://learn.blog.csdn.net/article/details/102503090">这里</a></p>
+<h4 id="字段约束"><a href="#字段约束" class="headerlink" title="[字段约束]"></a>[字段约束]</h4><blockquote>
+<p> <code>NOT NULL</code> 非空约束</p>
+</blockquote>
+<p>可以保证该字段不等于Null</p>
+<blockquote>
+<p> <code>DEFAULT</code> 默认值约束</p>
+</blockquote>
+<p>可以使该字段拥有默认值，而不是Null</p>
+<blockquote>
+<p> <code>UNIQUE</code> 唯一约束</p>
+</blockquote>
+<p>可以使字段具有唯一性，数据不会重复</p>
+<blockquote>
+<p> <code>PRIMARY KEY</code> 主键约束</p>
+</blockquote>
+<p>即可以使该字段不为空，又可以使该字段的数据不会重复，一个表中只能设置一个主键约束</p>
+<blockquote>
+<p> <code>FOREIGN KEY</code> 外键约束</p>
+</blockquote>
+<p>在多个表的情况下使用，可以保证该字段的数据来自于被关联的列的值，被关联的字段必须设置了主键约束<br>　　- 比如students表中的class字段(表示学生的班级)与classes表中的classNum字段(表示班级代号)关联，其中classNum列中只有三条数据，101，102，103，那么class字段的值只能是这三者之一，不可能是104，105……</p>
+<h4 id="engine-存储引擎"><a href="#engine-存储引擎" class="headerlink" title="engine [存储引擎]"></a>engine [存储引擎]</h4><p>默认为INNODB<br>还有MYISAM，MEMORY等许多引擎，一般这三个用的最多<br>它们的区别可见-&gt;<a target="_blank" rel="external nofollow noopener noreferrer" href="https://blog.csdn.net/yjclsx/article/details/81911027">这里</a></p>
+<h4 id="charest-字符编码"><a href="#charest-字符编码" class="headerlink" title="charest [字符编码]"></a>charest [字符编码]</h4><p>默认为UTF-8<br>还有GBK等，这里不多写</p>
+<h3 id="查看数据表结构"><a href="#查看数据表结构" class="headerlink" title="查看数据表结构"></a>查看数据表结构</h3><p><code>desc [数据表名];</code><br>可以查看该数据表的结构</p>
+<h3 id="删除数据表"><a href="#删除数据表" class="headerlink" title="删除数据表"></a>删除数据表</h3><p><em>注意:删的是数据表而不是数据</em></p>
+<p>使用 <code>DROP TABLE [数据表名];</code> 可以删除一个数据表</p>
+<h3 id="查询语句"><a href="#查询语句" class="headerlink" title="查询语句"></a>查询语句</h3><p><code>SELECT [字段名] FROM [数据表名] WHERE [查询条件] GROUP BY [分组依据] HAVING [分组过滤] ORDED BY [查询排序] LIMIT [分页查询条数]; </code> 这是一个完整的查询语句</p>
+<p><code>SELECT [字段名] FROM [数据表名];</code>这是一个最基本的查询语句，里面都是必选项</p>
+<h4 id="字段名"><a href="#字段名" class="headerlink" title="[字段名]"></a>[字段名]</h4><p>就是要查询的字段，如果需要查询全部字段，可以用<code>*</code>代替</p>
+<p>查询多个字段，字段名之间应该用<code>,</code>隔开</p>
+<blockquote>
+<p> 为查询的字段设置别名</p>
+</blockquote>
+<p><code>[字段名] as [别名]</code> 可以进一步省略为 <code>[字段名] [别名]</code></p>
+<p>如果设置了别名，查询结果中该字段将显示为别名</p>
+<h4 id="FROM-数据表名"><a href="#FROM-数据表名" class="headerlink" title="FROM  [ 数据表名]"></a>FROM  [ 数据表名]</h4><p>这里就写字段所在的表名</p>
+<blockquote>
+<p>同时查询多张表</p>
+</blockquote>
+<p>见<a href="#duoBiao">多表连接</a></p>
+<h4 id="分组函数"><a href="#分组函数" class="headerlink" title="[分组函数]"></a>[分组函数]</h4><table>
+<thead>
+<tr>
+<th>分组函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sum()</td>
+<td>求和</td>
+</tr>
+<tr>
+<td>avg()</td>
+<td>求平均值</td>
+</tr>
+<tr>
+<td>max()</td>
+<td>球最大值</td>
+</tr>
+<tr>
+<td>min()</td>
+<td>求最小值</td>
+</tr>
+<tr>
+<td>count()</td>
+<td>计算个数</td>
+</tr>
+</tbody></table>
+<p>以上分组函数会自动过滤Null值</p>
+<p>例如:</p>
+<p>查询全部学生分数的平均值:<code>SELECT avg(studentScores) &#39;平均分数&#39; FROM t_students;</code></p>
+<p><em>注意:分组函数不可在<code>WHERE</code>中使用，它常常与<code>GROUP BY</code>配合使用，所以叫分组函数</em></p>
+<h4 id="WHERE-查询条件"><a href="#WHERE-查询条件" class="headerlink" title="WHERE  [查询条件]"></a>WHERE  [查询条件]</h4><p>需用到比较符</p>
+<table>
+<thead>
+<tr>
+<th>比较符</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>&lt;=&gt;</td>
+<td>安全的等于</td>
+</tr>
+<tr>
+<td>&lt;&gt;或者!=</td>
+<td>不等于</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于等于</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td>IS NULL或ISNULL</td>
+<td>判断一个值是否为空</td>
+</tr>
+<tr>
+<td>IS NOT NULL</td>
+<td>判断一个值是否不为空</td>
+</tr>
+<tr>
+<td>BETWEEN AND</td>
+<td>判断一个值是否落在两个值之间</td>
+</tr>
+</tbody></table>
+<p>例如:</p>
+<p>取成绩(一个字段)大于等于90分的学生数据 <code>SELECT * FROM t_students WHERE studentScore &gt;= 90</code>;</p>
+<p>取学生成绩在70分到80分之间的数据(使用BETWEEN AND)<code>SELECT * FROM t_students WHERE studentScore BETWEEN 70 AND 80;</code></p>
+<blockquote>
+<p>LIKE模糊查询</p>
+</blockquote>
+<p>LIKE 关键字支持百分号<code>%</code>和下划线<code>_</code>通配符，<code>%</code>表示可能有多个字符，<code>_</code>表示只有一个字符，当只知道数据中的某个字符时，LIKE关键字就比较方便</p>
+<p>例如:</p>
+<p>取所有学生名字(一个字段)由<code>Y</code>开头的学生名字<code>SELECT studentName FROM t_students WHERE studentName LIKE &#39;Y%&#39;;</code></p>
+<blockquote>
+<p>添加多个条件</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AND</td>
+<td>满足所有条件时才会被查询出来</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>满足其中一个条件时就会被查询出来</td>
+</tr>
+<tr>
+<td>XOR</td>
+<td>记录满足其中一个条件，并且不满足另一个条件时，才会被查询出来</td>
+</tr>
+</tbody></table>
+<p>例如:</p>
+<p>取学生成绩在70分到80分之间的数据(使用&lt; 与 &gt;)<code>SELECT * FROM t_students WHERE studentScore &gt; 70 AND studentScore &lt; 80;</code></p>
+<h4 id="GROUP-BY-分组依据"><a href="#GROUP-BY-分组依据" class="headerlink" title="GROUP BY [分组依据]"></a>GROUP BY [分组依据]</h4><p><em>注意:当一条SQL语句没有<code>GROUP BY</code>的话，整张表的数据会自成一组</em></p>
+<p>这里可以填写一个字段，查询结果会以这个字段进行分组</p>
+<p><em>注意:查询的字段只能是参与排序的字段、分组函数或拥有主键约束的字段，否则查询结果将没有任何意义(在非MySQL数据库会直接报错)</em></p>
+<p>例如:</p>
+<p>查询所有班级(并以班级为依据进行分组)<code>SELECT studentClass FROM t_students GROUP BY studentClass;</code></p>
+<p><code>GROUP BY</code>与分组函数的搭配使用</p>
+<p>例如:</p>
+<p>求每个班级的最高成绩<code>SELECT studentClass,max(studentScore) FROM t_students GROUP BY studentClass;</code></p>
+<h4 id="HAVING-分组过滤"><a href="#HAVING-分组过滤" class="headerlink" title="HAVING [分组过滤]"></a>HAVING [分组过滤]</h4><p>与<code>WHERE</code>高度相似，但<code>WHERE</code>是在<code>GROUP BY</code>之前执行，而<code>HAVING</code>是在<code>GROUP BY</code>之后执行</p>
+<p>考虑到效率问题，能在<code>WHERE</code>中解决的就不要在<code>HAVING</code>中解决</p>
+<p><em>注意:与<code>WHERE</code>不同的是，<code>HAVING</code>可以使用分组函数</em></p>
+<p>例如:</p>
+<p>查询所有班级的最高分数，其中平均分低于70分的班级不查询 <code>SELECT studentClass,max(studentScore) FROM t_students GROUP BY studentClass HAVING avg(studentScore) &gt; 70;</code></p>
+<h4 id="ORDED-BY-查询排序"><a href="#ORDED-BY-查询排序" class="headerlink" title="ORDED BY [查询排序]"></a>ORDED BY [查询排序]</h4><p>可以填写一个字段，查询结果会以这个字段为依据进行排序</p>
+<p>默认为升序(ASC)，也可以设置为降序(DESC)</p>
+<p>例如:</p>
+<p>查询所有学生，并以学生ID的降序进行排序 <code>SELECY studentName,studentID FROM t_students ORDED BY studentID DESC;</code></p>
+<blockquote>
+<p>多字段排序</p>
+</blockquote>
+<p>可以在<code>ORDED BY</code>后面填写多个字段，它将会按照先后顺序逐个进行排序</p>
+<h4 id="LIMIT-分页查询条数"><a href="#LIMIT-分页查询条数" class="headerlink" title="LIMIT [分页查询条数]"></a>LIMIT [分页查询条数]</h4><p><em>注意:这个比较重要</em></p>
+<p>LIMIT 关键字可以指定查询结果从哪条记录开始显示，显示多少条记录</p>
+<p>可以这样写 <code>LIMIT [起始位置], [记录条数]</code></p>
+<p><em>注意:[起始位置] 与 [记录条数]都应该是正整数。并且[起始位置]是基零的(第一条数据就是0)。[起始位置]可以省略，默认0</em></p>
+<p>这里有个公式<code>[起始位置], [记录条数] = (pageNO - 1) * pageSize, pageSize </code></p>
+<p>其中 <code>pageNO</code>为显示第几页，<code>pageSize</code>为每页显示多少条记录</p>
+<h4 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h4><p>以下是MySQL中<code>SELECT</code>语句的执行顺序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">SELECT	5</span><br><span class="line">...</span><br><span class="line">FROM	1</span><br><span class="line">JOIN		(1)</span><br><span class="line">ON			(2)</span><br><span class="line">...</span><br><span class="line">WHERE	2</span><br><span class="line">... </span><br><span class="line">GROUP BY	3</span><br><span class="line">... </span><br><span class="line">HAVING	4</span><br><span class="line">...</span><br><span class="line">ORDER BY	6</span><br><span class="line">...</span><br><span class="line">LIMIT	7</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h4 id="多表查询"><a href="#多表查询" class="headerlink" title="多表查询"></a><span id="duoBiao">多表查询</span></h4><blockquote>
+<p><code>INNER JOIN</code> 内连接</p>
+</blockquote>
+<p><em>注意:内连接中的表是同级关系。<code>INNER</code> 关键字可以省略</em></p>
+<p>例如:<br>查询所有学生与班级 <code>SELECT studentName,claasName FROM t_students JOIN t_classes;</code></p>
+<p>但结果是这样的，并没有什么意义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">+-------------+------------+</span><br><span class="line">| studentName | className  |</span><br><span class="line">+-------------+------------+</span><br><span class="line">| 张三        | 一年级一班 |</span><br><span class="line">| 张三        | 一年级二班 |</span><br><span class="line">| 张三        | 一年级三班 |</span><br><span class="line">| 李四        | 一年级一班 |</span><br><span class="line">| 李四        | 一年级二班 |</span><br><span class="line">| 李四        | 一年级三班 |</span><br><span class="line">| 王五        | 一年级一班 |</span><br><span class="line">| 王五        | 一年级二班 |</span><br><span class="line">| 王五        | 一年级三班 |</span><br><span class="line">+-------------+------------+</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>为表设置别名</p>
+</blockquote>
+<p>与为字段设置别名一样，查询的字段需要这样写<code>[表的别名].[字段名]</code></p>
+<p>例如:</p>
+<p>查询所有学生与班级<code>SELECT stu.studentName,cla.className FROM t_students stu JOIN t_classes cla;</code></p>
+<blockquote>
+<p><code>ON</code> 关键字</p>
+</blockquote>
+<p><code>ON</code> 关键字就是连接条件</p>
+<p>例如:</p>
+<p>查询学生与对应的班级名称 <code>SELECT stu.studentName,cla.className FROM t_students stu JOIN t_classes cla ON stu.studentClass = cla.classID;</code>(studentClass与classID为班级代号，例如101，102……)</p>
+<blockquote>
+<p>外连接</p>
+</blockquote>
+<p>外连接与内连接不同的地方在于:</p>
+<p>内连接不满足连接条件的数据都不会在查询结果中显示</p>
+<p>外连接如果不满足条件则会以NULL表示</p>
+<p>​    - 左外连接<code>LEFT JOIN</code></p>
+<p>以左边的表为基准，当左表不符合连接条件时则会以NULL表示，而不是舍去</p>
+<p>​    - 右外连接<code>RIGHT JOIN</code> </p>
+<p>与左外连接相反</p>
+<h4 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h4><p>使用 <code>distinct</code> 关键字，这个关键字应放在<code>SELECT</code>的后面，所有 [字段名] 的前面</p>
+<p>这个关键字可以去除查询结果中数据完全一样的数据</p>
+<h4 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h4><p>子查询就是将一个查询结果放在另一个<code>SELECT</code>查询语句中，即为嵌套</p>
+<blockquote>
+<p><code>WHERE</code>子查询</p>
+</blockquote>
+<p>把子查询放在<code>WHERE</code>关键字后面</p>
+<p>例如:查询成绩高于平均成绩的学生信息</p>
+<p>第一步:</p>
+<p>查询平均成绩 <code>SELECT avg(studentScore) FROM t_students;</code> 记住这个结果</p>
+<p>第二步:</p>
+<p><code>SELECT * FROM t_students WHERE studentScore &gt; [第一步的结果];</code></p>
+<p>使用子查询:</p>
+<p><code>SELECT * FROM t_students WHERE studentScore &gt; (SELECT avg(studentScore) FROM t_students);</code></p>
+<p><em>注意:别忘了<code>WHERE</code>关键字后面不可以使用分组函数</em></p>
+<blockquote>
+<p><code>FROM</code>子查询</p>
+</blockquote>
+<p>把子查询放在<code>FROM</code>关键字后面，可以将子查询结果当成一张新表来查询</p>
+<p>例如:</p>
+<p>首先，取每个班的平均成绩 <code>SELECT studentClass,avg(studentScore) scores FROM t_students GROUP BY studentClass;</code></p>
+<p>最后联合起来，以上面的语句为子查询，查询每个班级的平均成绩并划分等级 <code>SELECT sco.studentClass,sco.scores,gra.grade FROM t_grade gra JOIN (SELECT studentClass,avg(studentScore) scores FROM t_students GROUP BY studentClass) sco ON sco.scores BETWEEN gra.minScore AND gra.maxScore; </code></p>
+<p><em>注意:假设等级是这样的一张表</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">+-------+----------+----------+</span><br><span class="line">| grade | minScore | maxScore |</span><br><span class="line">+-------+----------+----------+</span><br><span class="line">| A     |       80 |      100 |</span><br><span class="line">| B     |       70 |       80 |</span><br><span class="line">| C     |        0 |       60 |</span><br><span class="line">+-------+----------+----------+  &#x2F;&#x2F; 100-80分为A,70-60分为B,60分以下为C</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>SELECT</code> 子查询</p>
+</blockquote>
+<p>这里不多写，就是把子查询放到<code>SELECT</code>关键字的后面</p>
+<h3 id="插入语句"><a href="#插入语句" class="headerlink" title="插入语句"></a>插入语句</h3><p><code>INSERT INTO [数据表名]([字段1名,字段2名......]) VALUES ([插入值1,插入值2......]);</code></p>
+<p>这是一个完整的插入语句，可以进一步简写为</p>
+<p><code>INSERT INTO [数据表名] ([插入值1,插入值2......]);</code></p>
+<h4 id="字段名-1"><a href="#字段名-1" class="headerlink" title="[字段名]"></a>[字段名]</h4><p>这里填写要插入数据的字段名，如需插入到全部字段，可以省略</p>
+<p><em>注意:如果不插入某一个字段，那么那一个字段将以默认值或NULL代替</em></p>
+<h4 id="插入值"><a href="#插入值" class="headerlink" title="[插入值]"></a>[插入值]</h4><p>这里填写要插入的数据，如果是字符串，则需要加单引号<code>&#39; &#39;</code></p>
+<p>需要与[字段名]一一对应，如果省略了[字段名]，那么需要按照表中设置字段的顺序来填写</p>
+<h3 id="删除语句"><a href="#删除语句" class="headerlink" title="删除语句"></a>删除语句</h3><p><code>DELETE FROM [数据表名] WHERE [删除条件];</code>，这是一个删除语句</p>
+<p>后面还可加[ORDED BY] [LIMIT]等，但在这不写</p>
+<h4 id="删除条件"><a href="#删除条件" class="headerlink" title="[删除条件]"></a>[删除条件]</h4><p>和<code>SELECT</code>语句中的<code>WHERE</code>一样，在这里，符合条件的数据将被删除</p>
+<p><em>注意:如果不写[删除条件]，那么整张表的数据都会被删掉</em></p>
+<h3 id="修改语句"><a href="#修改语句" class="headerlink" title="修改语句"></a>修改语句</h3><p><code>UPDATE [数据表名] SET [字段名1 = 新值1],[字段名2 = 新值2......] WHERE [修改条件];</code>，这是一个修改语句</p>
+<p>与删除语句一样，后面还可加[ORDED BY] [LIMIT]等，但在这不写</p>
+<p>[字段名 = 新值]与[修改条件](还是<code>WHERE</code>)也不写</p>
+<hr>
+</div><h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><div class="story post-story"><h3 id="事务的特性"><a href="#事务的特性" class="headerlink" title="事务的特性"></a>事务的特性</h3><p>事务有4个特性，分别是</p>
+<pre><code>- 原子性(事务中各元素不可再分，事务中的所有元素必须作为一个整体提交或回滚)
+- 一致性(当事务完成时，数据必须处于一致状态)
+- 隔离性(对数据进行修改的所有并发事务是彼此隔离的，这表明事务必须是独立的)
+- 持久性(事务的持久性指不管系统是否发生了故障，事务处理的结果都是永久的)
+</code></pre>
+<h4 id="事务隔离"><a href="#事务隔离" class="headerlink" title="事务隔离"></a>事务隔离</h4><p>MySQL中，事务的隔离等级一共有4个，重低到高分别是</p>
+<ul>
+<li>读未提交(当一个事务还未提交时就可以访问它的数据。问题:可能出现脏读)</li>
+<li>读已提交(当一个事务提交后才可以访问它数据。问题:不可重复读)</li>
+<li>可重复读(问题:可能出现幻读)</li>
+<li>可串行化(相当于单线程，它解决了以上三个问题，但效率较低)</li>
+</ul>
+<p>具体的还可见-&gt;<a target="_blank" rel="external nofollow noopener noreferrer" href="https://blog.csdn.net/qq_33290787/article/details/51924963">这里</a></p>
+<h3 id="事务的作用"><a href="#事务的作用" class="headerlink" title="事务的作用"></a>事务的作用</h3><p>事务适合处理处理操作量大，复杂度高的数据</p>
+<p>事务具有<code>原子性</code>，当事务中一条语句出错时，其它的语句将不会生效</p>
+<p>例如:<br>事务处理机制在程序开发过程中有着非常重要的作用，它可以使整个系统更加安全，例如在银行处理转账业务时，如果A账户中的金额刚被发出，而B账户还没来得及接收就发生停电，这会给银行和个人带来很大的经济损失。采用事务处理机制，一旦在转账过程中发生意外，则程序将回滚，不做任何处理。</p>
+<h3 id="执行事务"><a href="#执行事务" class="headerlink" title="执行事务"></a>执行事务</h3><blockquote>
+<p>启动事务</p>
+</blockquote>
+<p>默认情况下，事务是自动提交的</p>
+<p>可使用<code>START TRANSACTION;</code>来手动启动一个事务</p>
+<blockquote>
+<p>提交事务</p>
+</blockquote>
+<p>可使用<code>COMMIT;</code>来手动提交一个事务</p>
+<blockquote>
+<p>回滚事务</p>
+</blockquote>
+<p>可使用<code>ROLLBACK;</code>来手动回滚一个事务</p>
+</div><h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><div class="story post-story"><h3 id="什么是索引"><a href="#什么是索引" class="headerlink" title="什么是索引"></a>什么是索引</h3><p>索引就想字典的目录一样，可以更快捷的获取数据的内容</p>
+<p>如果在没有索引的情况下使用<code>SELECT</code>语句的话，就像在字典中寻找一个字而不用目录，一页一页的翻总会翻到，但是很慢</p>
+<p>如果有了索引就不一样了</p>
+<h3 id="索引的原理"><a href="#索引的原理" class="headerlink" title="索引的原理"></a>索引的原理</h3><p>比较复杂，与Java中的Map类似</p>
+<h3 id="适用的场景"><a href="#适用的场景" class="headerlink" title="适用的场景"></a>适用的场景</h3><pre><code>- 数据量庞大
+- 该字段很少DML操作
+- 该字段经常出现在`WHERE`语句中
+</code></pre>
+<h3 id="查看执行计划"><a href="#查看执行计划" class="headerlink" title="查看执行计划"></a>查看执行计划</h3><p>使用<code>EXPLAIN [SQL语句];</code>可输出该SQL语句的执行计划</p>
+<h3 id="创建索引"><a href="#创建索引" class="headerlink" title="创建索引"></a>创建索引</h3><p><em>注意:具有主键约束或唯一约束的字段会自动添加索引</em></p>
+<p>使用 <code>CREATE INDEX [索引名] ON [数据表名]([字段名]);</code> 可以根据[数据表名]中的[字段名]字段来创建一个索引</p>
+<h3 id="删除索引"><a href="#删除索引" class="headerlink" title="删除索引"></a>删除索引</h3><p>使用 <code>DROP INDEX [索引名称] ON [数据表名];</code> 可以删除一个索引</p>
+</div><h2 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h2><div class="story post-story"><h3 id="什么是视图"><a href="#什么是视图" class="headerlink" title="什么是视图"></a>什么是视图</h3><p>MySQL 视图（View）是一种虚拟存在的表，同真实表一样，视图也由列和行构成，但视图并不实际存在于数据库中。行和列的数据来自于定义视图的查询中所使用的表，并且还是在使用视图时动态生成的。</p>
+<p><em>注意:修改视图的数据也会影响到数据表中的数据</em></p>
+<h3 id="创建视图"><a href="#创建视图" class="headerlink" title="创建视图"></a>创建视图</h3><p>使用 <code>CREATE VIEW [视图名] AS [SELECT语句]</code> 可以创建一个视图</p>
+<p>*注意:<code>SELECT</code>*语句中不可以包含子查询</p>
+<h4 id="SELECT语句"><a href="#SELECT语句" class="headerlink" title="[SELECT语句]"></a>[SELECT语句]</h4><p>执行此语句就是查询视图的结果</p>
+</div><h2 id="导入与导出"><a href="#导入与导出" class="headerlink" title="导入与导出"></a>导入与导出</h2><div class="story post-story"><h3 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h3><p>使用 <code>SOURCE [.sql文件的路径]</code> 可以导入一个.sql文件</p>
+<h3 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h3><p>使用 <code>MYSQIDUMP-u [用户名] -p [数据库名] &gt; [导出的文件名]</code> 可以导出整个数据库</p>
+<p>使用 <code>MYSQIDUMP -u [用户名] -p [数据库名] [表名] &gt; [导出的文件名]</code> 可以导出单张数据表</p>
+</div><h2 id="MySQL可视化工具"><a href="#MySQL可视化工具" class="headerlink" title="MySQL可视化工具"></a>MySQL可视化工具</h2><div class="story post-story"><p>可使用mysql-front</p>
+<p>可前往-&gt;<a target="_blank" rel="external nofollow noopener noreferrer" href="https://how2j.cn/k/mysql/mysql-mysqlfront/378.html">这里</a>获取下载地址</p>
+</div><h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h2><div class="story post-story"><pre><code>- [C语言中文网](http://c.biancheng.net/mysql/)
+- [动力节点视频](https://b23.tv/TmGf9I)
+- [MySQL—内连接和外连接区别_johnhan9的博客-CSDN博客_mysql内连接和外连接的区别](https://blog.csdn.net/johnhan9/article/details/88686288)
+- [mysql数据库导入导出文件sql文件_Allen . Liu-CSDN博客_mysql导出导入sql文件](https://blog.csdn.net/qq_41856814/article/details/114481099)
+- [mysql系列教材 (how2j.cn)](https://how2j.cn/k/mysql/mysql-install/377.html)
+- 还有部分来源于网络
+</code></pre>
+
+</div>
   </div>
   
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-07-11T20:33:00+08:00">2021-07-11</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
-            </span>
-          
-        
-      </div>
+  
+    
+    <div class="footer">
       
-        <div>
-          <a class="readmore" href="/archives/2021/46.html" itemprop="url">
-            阅读全文
-          </a>
+      
+      
+        <div class="copyright">
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href="https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html">https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class="article-meta" id="bottom">
+    <div class="new-meta-box">
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-08-19T20:38:36+08:00">
+  <a class="notlink" href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年8月19日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/45.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/45.html" itemprop="url">
-        在主题里投放AdSense到发家致富
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <h2 id="Adsense是什么？"><a href="#Adsense是什么？" class="headerlink" title="Adsense是什么？"></a>Adsense是什么？</h2><p>AdSense是个合成词。其中ad是“广告”之意，sense是“感知”之意，综合起来的意思就是相关广告。Google通过程序来分析网站的内容，并且投放与网站内容相关的广告。Google AdSense是由<a target="_blank" rel="external nofollow noopener noreferrer" href="https://baike.baidu.com/item/Google/86964">Google</a>公司推出的针对网站主（简称发布商）的一个互联网广告服务。</p>
-<p>—百度百科
-    
-  </p></div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-01-25T11:17:00+08:00">2021-01-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
-            </span>
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>教程</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>笔记</p></a></div>
+  <span hidden itemprop="keywords">教程 笔记</span>
+
+
+        
+      
+        
           
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2021/45.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/44.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/44.html" itemprop="url">
-        更改Handsome主题默认图标
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->
-
-<h2 id="注意"><a href="#注意" class="headerlink" title="!!注意"></a>!!注意</h2><p>因taog.top域名到期，所以本文图片无法访问，我也没做备份，就先看文字吧</p>
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-01-18T14:23:00+08:00">2021-01-18</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+      
+        <a class="-mob-share-qq" title rel="external nofollow noopener noreferrer" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html&title=MySQL-基础语句 - TAOG&summary=介绍此文为我学习MySQL基本语句时所记录的笔记">
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
-            </span>
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
           
-        
-      </div>
+        </a>
       
-        <div>
-          <a class="readmore" href="/archives/2021/44.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
+    
       
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2021/43.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2021/43.html" itemprop="url">
-        2020年度总结
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->
-
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>岁月如梭，不知不觉中，2020年已成为了过去</p>
-<p>在这一年中，新冠、地震、洪涝这些灾难一一出现</p>
-<p>回首望去，貌似停课的事还在昨天</p>
-<p>我的博客，也建立在那段时间(2020.02.08)</p>
-<p>转过头来，总结了一下在今年，本站的经历吧！</p>
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-01-01T08:00:00+08:00">2021-01-01</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%89%B9%E6%AE%8A/">特殊</a>
+        <a class="-mob-share-qzone" title rel="external nofollow noopener noreferrer" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html&title=MySQL-基础语句 - TAOG&summary=介绍此文为我学习MySQL基本语句时所记录的笔记">
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%89%B9%E6%AE%8A/" itemprop="url"><span itemprop="name">特殊</span></a>
-            </span>
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
           
-        
-      </div>
+        </a>
       
-        <div>
-          <a class="readmore" href="/archives/2021/43.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
+    
       
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/40.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/40.html" itemprop="url">
-        断章
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->
-
-<h2 id="断章"><a href="#断章" class="headerlink" title="断章"></a>断章</h2><h3 id="卞之琳"><a href="#卞之琳" class="headerlink" title="卞之琳"></a>卞之琳</h3><p>你站在桥上看风景，</p>
-<p>看风景人在楼上看你。</p>
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-12-20T02:30:00+08:00">2020-12-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+        <a class="-mob-share-weibo" title rel="external nofollow noopener noreferrer" target="_blank" href="http://service.weibo.com/share/share.php?url=https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html&title=MySQL-基础语句 - TAOG&summary=介绍此文为我学习MySQL基本语句时所记录的笔记">
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" itemprop="url"><span itemprop="name">默认分类</span></a>
-            </span>
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
           
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2020/40.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/39.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/39.html" itemprop="url">
-        几种图床的使用
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->
-
-<p>大家应该都知道前段时间JsDeliver不给用图床了，得找个代替，国内有啥好用的图床呢？</p>
-<p>知名些的有Imgur、smms等，但是速度不是一般般就是被墙</p>
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-11-15T07:56:00+08:00">2020-11-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2020/39.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/38.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/38.html" itemprop="url">
-        白嫖！10GB免流海外BackBlaze对象存储【可套CDN】
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      <!--markdown-->## 此文转载于cyfan.top
-    
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-10-05T10:41:00+08:00">2020-10-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%88%86%E4%BA%AB/">分享</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%88%86%E4%BA%AB/" itemprop="url"><span itemprop="name">分享</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class="readmore" href="/archives/2020/38.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/32.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/32.html" itemprop="url">
-        在网页中插入一言API
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      
-        在网页中插入一言API
-
-一言是什么？简单来说，就是随机输出一句话/诗
-
-如何在网页中调用？这就得用到官方的api接口了
-可能你会看不懂官方文档，没事，接着往下看
-文档中写了一个简单的调用方法
-12&lt;!-- 新 API 方法， 十分简洁 --&gt;&lt;script src=&quot;https://v1.hitokoto.cn/?encode=js&amp;select=%23...
+        </a>
       
     
-  </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-09-11T14:38:00+08:00">2020-09-11</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
-            </span>
-          
-        
-      </div>
       
-        <div>
-          <a class="readmore" href="/archives/2020/32.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <div class="post post-v3 white-box reveal shadow" itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://iktao.cn/archives/2020/31.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="TAOG">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
     
-    <h2 class="article-title" itemprop="name headline">
-      <a href="/archives/2020/31.html" itemprop="url">
-        关于JsDeliver CDN表明禁止使用图床
-      </a>
-    </h2>
-  
-  <div class="md" itemprop="articleBody">
-    
-      
-        不知大家最近在博客交流QQ群里有无看到这样一条消息：
-
-[scode type=”share”]提醒一下：2020年8月 JsDeliver新增使用政策 禁止以下行为：
-托管或访问以下内容：
-包含任何形式的恶意软件或有害代码，
-侵犯他人的所有权，
-是色情的
-在欧盟或美国可能是非法的。
-滥用服务及其资源，或将jsDelivr用作通用文件或媒体托管服务。例如，这包括：
-运行图像托管网站，并使用j...
       
     
   </div>
-  
-    <div class="meta-v3" line_style="solid">
-      <div>
+</div>
+
+
+
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-30T11:41:18+08:00">2020-08-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" itemprop="url"><span itemprop="name">默认分类</span></a>
-            </span>
-          
-        
-      </div>
       
-        <div>
-          <a class="readmore" href="/archives/2020/31.html" itemprop="url">
-            阅读全文
-          </a>
-        </div>
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class="next" href="/archives/2021/46.html">
+          <p class="title">C#学习笔记--属性<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class="content">
+属性（Property）的访问器（accessor）包含有助于获取（读取或计算）或设置（写入）属性的可执行语句。访问器（accessor）声明可包含一个 get 访问器、一个 set 访问器，...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- Custom Files postEnd begin-->
   
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 3
-        </p>
-        
-          <a class="next" rel="next" href="/page/2/">
-            <section class="post next white-box shadow">
-              &nbsp;下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
+
+  
+  <article class="post white-box reveal shadow" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html#comments">
+    </span>
+    <p ct><i class="fas fa-comments"></i> 评论</p>
+    
+    
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+  
+
+
+
 
 
 </div>
@@ -3317,265 +3233,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow floatable desktop mobile pjax">
-  <div class="content">
-    
-      
-        <a class="avatar flat-box circle" href="/about/">
-          <img no-lazy src="https://doge.cdn.iktao.cn/img/Logoii-ist.webp" alt="This is a picture without description" >
-        </a>
-      
-    
-    
-      <div class="text">
-        
-        
-          <p>风一去不回来</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml" class="social fas fa-rss flat-btn" target="_blank" rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:taogsem@gmail.com" class="social fas fa-envelope flat-btn" target="_blank" rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/taoggt/" class="social fab fa-github flat-btn" target="_blank" rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/" class="social fas fa-headphones-alt flat-btn" target="_blank" rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget text shadow floatable desktop mobile pjax">
-  
-  <header>
-    
-      <a href="https://iktao.cn/"><i class="fa fa-bullhorn fa-fw" aria-hidden="true"></i><span class="name">公告</span></a>
-    
-  </header>
 
 
-  <div class="content">
-    
-      <p>由于以前的文是在typecho写的，所以在2021/2之前的所有文章图片，排版都可能有问题</p>
-
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget category shadow floatable desktop pjax">
+  <section class="widget toc-wrapper shadow floatable desktop mobile pjax" id="toc-div">
     
   <header>
     
-      <a href="/categories/"><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class="name">文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class="name">本文目录</span>
     
   </header>
 
 
     <div class="content">
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box" title="/categories/%E5%88%86%E4%BA%AB/" href="/categories/%E5%88%86%E4%BA%AB/" active-action="action-categoriesE58886E4BAAB"><div class="name">分享</div><div class="badge">(5)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/" active-action="action-categoriesE69599E7A88B"><div class="name">教程</div><div class="badge">(10)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%89%B9%E6%AE%8A/" href="/categories/%E7%89%B9%E6%AE%8A/" active-action="action-categoriesE789B9E6AE8A"><div class="name">特殊</div><div class="badge">(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/" active-action="action-categoriesE7AC94E8AEB0"><div class="name">笔记</div><div class="badge">(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%AF%84%E6%B5%8B/" href="/categories/%E8%AF%84%E6%B5%8B/" active-action="action-categoriesE8AF84E6B58B"><div class="name">评测</div><div class="badge">(2)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" active-action="action-categoriesE9BB98E8AEA4E58886E7B1BB"><div class="name">默认分类</div><div class="badge">(3)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MySQL%E8%BF%9E%E6%8E%A5"><span class="toc-number">2.</span> <span class="toc-text">MySQL连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E8%AF%AD%E5%8F%A5%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83"><span class="toc-number">3.</span> <span class="toc-text">SQL语句书写规范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8C%87%E4%BB%A4"><span class="toc-number">4.</span> <span class="toc-text">数据库指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">4.1.</span> <span class="toc-text">查看数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">4.2.</span> <span class="toc-text">创建数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">4.3.</span> <span class="toc-text">使用数据库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%8C%87%E4%BB%A4"><span class="toc-number">5.</span> <span class="toc-text">数据表指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="toc-number">5.1.</span> <span class="toc-text">创建数据表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.1.1.</span> <span class="toc-text">[字段类型]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5%E7%BA%A6%E6%9D%9F"><span class="toc-number">5.1.2.</span> <span class="toc-text">[字段约束]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#engine-%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E"><span class="toc-number">5.1.3.</span> <span class="toc-text">engine [存储引擎]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#charest-%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81"><span class="toc-number">5.1.4.</span> <span class="toc-text">charest [字符编码]</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%BB%93%E6%9E%84"><span class="toc-number">5.2.</span> <span class="toc-text">查看数据表结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="toc-number">5.3.</span> <span class="toc-text">删除数据表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5"><span class="toc-number">5.4.</span> <span class="toc-text">查询语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5%E5%90%8D"><span class="toc-number">5.4.1.</span> <span class="toc-text">[字段名]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FROM-%E6%95%B0%E6%8D%AE%E8%A1%A8%E5%90%8D"><span class="toc-number">5.4.2.</span> <span class="toc-text">FROM  [ 数据表名]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0"><span class="toc-number">5.4.3.</span> <span class="toc-text">[分组函数]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WHERE-%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6"><span class="toc-number">5.4.4.</span> <span class="toc-text">WHERE  [查询条件]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GROUP-BY-%E5%88%86%E7%BB%84%E4%BE%9D%E6%8D%AE"><span class="toc-number">5.4.5.</span> <span class="toc-text">GROUP BY [分组依据]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HAVING-%E5%88%86%E7%BB%84%E8%BF%87%E6%BB%A4"><span class="toc-number">5.4.6.</span> <span class="toc-text">HAVING [分组过滤]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ORDED-BY-%E6%9F%A5%E8%AF%A2%E6%8E%92%E5%BA%8F"><span class="toc-number">5.4.7.</span> <span class="toc-text">ORDED BY [查询排序]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LIMIT-%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2%E6%9D%A1%E6%95%B0"><span class="toc-number">5.4.8.</span> <span class="toc-text">LIMIT [分页查询条数]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="toc-number">5.4.9.</span> <span class="toc-text">执行顺序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-number">5.4.10.</span> <span class="toc-text">多表查询</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%BB%E9%87%8D"><span class="toc-number">5.4.11.</span> <span class="toc-text">去重</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%90%E6%9F%A5%E8%AF%A2"><span class="toc-number">5.4.12.</span> <span class="toc-text">子查询</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E8%AF%AD%E5%8F%A5"><span class="toc-number">5.5.</span> <span class="toc-text">插入语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5%E5%90%8D-1"><span class="toc-number">5.5.1.</span> <span class="toc-text">[字段名]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E5%80%BC"><span class="toc-number">5.5.2.</span> <span class="toc-text">[插入值]</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E8%AF%AD%E5%8F%A5"><span class="toc-number">5.6.</span> <span class="toc-text">删除语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%9D%A1%E4%BB%B6"><span class="toc-number">5.6.1.</span> <span class="toc-text">[删除条件]</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%AF%AD%E5%8F%A5"><span class="toc-number">5.7.</span> <span class="toc-text">修改语句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-number">6.</span> <span class="toc-text">事务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E7%89%B9%E6%80%A7"><span class="toc-number">6.1.</span> <span class="toc-text">事务的特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB"><span class="toc-number">6.1.1.</span> <span class="toc-text">事务隔离</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">6.2.</span> <span class="toc-text">事务的作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E4%BA%8B%E5%8A%A1"><span class="toc-number">6.3.</span> <span class="toc-text">执行事务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95"><span class="toc-number">7.</span> <span class="toc-text">索引</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%B4%A2%E5%BC%95"><span class="toc-number">7.1.</span> <span class="toc-text">什么是索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-number">7.2.</span> <span class="toc-text">索引的原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%82%E7%94%A8%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-number">7.3.</span> <span class="toc-text">适用的场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92"><span class="toc-number">7.4.</span> <span class="toc-text">查看执行计划</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%B4%A2%E5%BC%95"><span class="toc-number">7.5.</span> <span class="toc-text">创建索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%B4%A2%E5%BC%95"><span class="toc-number">7.6.</span> <span class="toc-text">删除索引</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE"><span class="toc-number">8.</span> <span class="toc-text">视图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%A7%86%E5%9B%BE"><span class="toc-number">8.1.</span> <span class="toc-text">什么是视图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E8%A7%86%E5%9B%BE"><span class="toc-number">8.2.</span> <span class="toc-text">创建视图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SELECT%E8%AF%AD%E5%8F%A5"><span class="toc-number">8.2.1.</span> <span class="toc-text">[SELECT语句]</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA"><span class="toc-number">9.</span> <span class="toc-text">导入与导出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5"><span class="toc-number">9.1.</span> <span class="toc-text">导入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E5%87%BA"><span class="toc-number">9.2.</span> <span class="toc-text">导出</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MySQL%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7"><span class="toc-number">10.</span> <span class="toc-text">MySQL可视化工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%84%E6%96%99%E6%9D%A5%E6%BA%90"><span class="toc-number">11.</span> <span class="toc-text">资料来源</span></a></li></ol>
     </div>
   </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow floatable desktop mobile pjax">
-    
-  <header>
-    
-      <a href="/tags/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class="name">标签</span></a>
-    
-  </header>
-
-
-    <div class="content">
-      <a href="/tags/C-%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97/" style="font-size: 14px; color: #999">C#教程系列</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 17.33px; color: #828282">分享</a> <a href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97/" style="font-size: 14px; color: #999">建站教程系列</a> <a href="/tags/%E6%89%93%E9%80%A0%E4%B8%AA%E6%80%A7%E5%8C%96%E7%BD%91%E7%AB%99%E7%B3%BB%E5%88%97/" style="font-size: 20.67px; color: #6c6c6c">打造个性化网站系列</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 17.33px; color: #828282">笔记</a> <a href="/tags/%E8%AF%84%E6%B5%8B/" style="font-size: 17.33px; color: #828282">评测</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget shadow floatable desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class="name">站点信息</span>
-    
-  </header>
-
-
-  <div class="content">
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>23 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2020/02/10'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="lc-uv"><span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="lc-sv"><span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Sat Oct 02 2021 22:45:29 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-10-02 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-10-02 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3611,8 +3304,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="MySQL-基础语句";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3627,9 +3320,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="full";
+      cover_wrapper.id="half";
       cover_wrapper.style.display="";
-      scroll_down.style.display="";
+      scroll_down.style.display="none";
     
   
 </script>
@@ -3749,8 +3442,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633185929508')
-      volantis.js('/js/message.js?time=1633185929508', () => {
+      volantis.css('/css/message.css?time=1633185929322')
+      volantis.js('/js/message.js?time=1633185929322', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3795,8 +3488,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633185929508')
-      volantis.js('/js/message.js?time=1633185929508', () => {
+      volantis.css('/css/message.css?time=1633185929322')
+      volantis.js('/js/message.js?time=1633185929322', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3855,8 +3548,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633185929508')
-      volantis.js('/js/message.js?time=1633185929508', () => {
+      volantis.css('/css/message.css?time=1633185929322')
+      volantis.js('/js/message.js?time=1633185929322', () => {
         hideMessage(done);
       });
     } else {
@@ -3997,7 +3690,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       volantis.APlayerController = {};
     
-    volantis.js('/js/rightMenu.js?time=1633185929508')
+    volantis.js('/js/rightMenu.js?time=1633185929322')
   </script>
 
 
@@ -4110,19 +3803,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1633185929508")
+        volantis.js("/js/plugins/sites.js?time=1633185929322")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1633185929508")
+        volantis.js("/js/plugins/friends.js?time=1633185929322")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1633185929508")
+        volantis.js("/js/plugins/contributors.js?time=1633185929322")
       }
     
   };
@@ -4244,7 +3937,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1633185929508.js"></script>
+<script src="/js/app.js?time=1633185929322.js"></script>
 
 
 <!-- optional -->
@@ -4257,7 +3950,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1633185929508");
+    return volantis.js("/js/search/hexo.js?time=1633185929322");
   }
 
   function loadSearchService() {
@@ -4724,7 +4417,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"TAOG","url":"https://iktao.cn/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"TAOG","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://iktao.cn/","sameAs":["https://github.com/volantis-x"],"description":"一个小破博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://iktao.cn/","name":"TAOG"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"TAOG","url":"https://iktao.cn/","keywords":"blog,TAOG,TAOG's Blog,TAOGblog,TAOG小站","description":"一个小破博客","author":{"@type":"Person","name":"TAOG","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://iktao.cn/","description":"一个小破博客"},"publisher":{"@type":"Organization","name":"TAOG","url":"https://iktao.cn/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://iktao.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"TAOG","url":"https://iktao.cn/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"TAOG","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://iktao.cn/","sameAs":["https://github.com/volantis-x"],"description":"一个小破博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://iktao.cn/","name":"TAOG"}},{"@type":"ListItem","position":2,"item":{"@id":"https://iktao.cn/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://iktao.cn/archives/2021/MySQL-基础语句.html","name":"MySQL-基础语句"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"MySQL-基础语句","description":"介绍此文为我学习MySQL基本语句时所记录的笔记","datePublished":"2021-08-19T12:00:00.000Z","dateModified":"2021-08-19T12:38:36.510Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html"},"author":{"@type":"Person","name":"TAOG","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://iktao.cn/"},"publisher":{"@type":"Organization","name":"TAOG","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html","wordCount":24,"articleSection":"笔记","keywords":"教程,笔记","image":{"@type":"ImageObject","url":"https://unpkg.zhimg.com/iktao@1.2.0/img/cover/mysqlcover.jpg","width":1024,"height":768}}]</script>
 
 
 <!-- more -->

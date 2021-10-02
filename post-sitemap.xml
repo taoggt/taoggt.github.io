@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://iktao.cn/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+
+
+    <url>
+        <loc>https://iktao.cn/archives/2021/MySQL-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5.html</loc>
+        <lastmod>2021-08-19T12:38:36.510Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2021/46.html</loc>
+        <lastmod>2021-07-11T12:41:05.447Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2021/45.html</loc>
+        <lastmod>2021-07-11T06:22:14.188Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/39.html</loc>
+        <lastmod>2021-07-11T06:21:30.667Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/40.html</loc>
+        <lastmod>2021-07-11T06:21:20.973Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2021/43.html</loc>
+        <lastmod>2021-07-11T06:20:26.349Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2021/44.html</loc>
+        <lastmod>2021-07-11T06:20:16.119Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/38.html</loc>
+        <lastmod>2021-07-11T06:17:59.379Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/32.html</loc>
+        <lastmod>2021-02-16T07:41:24.299Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/31.html</loc>
+        <lastmod>2021-02-16T07:41:24.289Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/29.html</loc>
+        <lastmod>2021-02-16T07:41:24.272Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/26.html</loc>
+        <lastmod>2021-02-16T07:41:24.246Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/25.html</loc>
+        <lastmod>2021-02-16T07:41:24.230Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/23.html</loc>
+        <lastmod>2021-02-16T07:41:24.212Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/22.html</loc>
+        <lastmod>2021-02-16T07:41:24.202Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/11.html</loc>
+        <lastmod>2021-02-16T07:41:24.154Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/10.html</loc>
+        <lastmod>2021-02-16T07:41:24.147Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/9.html</loc>
+        <lastmod>2021-02-16T07:41:24.140Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/8.html</loc>
+        <lastmod>2021-02-16T07:41:24.133Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/7.html</loc>
+        <lastmod>2021-02-16T07:41:24.127Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/6.html</loc>
+        <lastmod>2021-02-16T07:41:24.121Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/4.html</loc>
+        <lastmod>2021-02-16T07:41:24.111Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://iktao.cn/archives/2020/3.html</loc>
+        <lastmod>2021-02-16T07:41:24.106Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+</urlset>
+<!-- XML Sitemap generated by Hexo SEO Friendly Sitemap Generator -->
